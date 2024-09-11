@@ -29,6 +29,9 @@ const App = () => {
           <Contact />
           <StarsCanvas />
         </div>
+        <a href='https://two2110447javawebdeploy.onrender.com/'>
+          Danh sách bài tập
+        </a>
       </div>
     </BrowserRouter>
   );
