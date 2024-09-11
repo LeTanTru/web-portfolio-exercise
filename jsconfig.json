@@ -1,0 +1,26 @@
+// {
+//    "compilerOptions": {
+//       "module": "ES6",
+//       "jsx": "preserve"
+//    }
+// }
+
+{
+  "compilerOptions": {
+    "module": "ES6",
+    "jsx": "preserve",
+    "baseUrl": "./",
+    "paths": {
+      "@components/*": ["src/components/*"],
+      "@hooks/*": ["src/hooks/*"],
+      "@constants/*": ["src/constants/*"],
+      "@pages/*": ["src/pages/*"],
+      "@fortawesome/react-fontawesome": [
+        "node_modules/@fortawesome/react-fontawesome/index"
+      ],
+      "@fortawesome/free-solid-svg-icons": [
+        "node_modules/@fortawesome/free-solid-svg-icons/index"
+      ]
+    }
+  }
+}
