@@ -3,8 +3,7 @@ const Loader = () => {
   const { progress } = useProgress();
   return (
     <Html>
-      <span className='canvas-load'></span>
-      <p className='mt-10 text-[14px] font-extrabold text-[#f1f1f1]'>
+      <p className='ml-[-50%] mt-10 text-[16px] font-extrabold text-[#f1f1f1]'>
         {progress.toFixed(2)}%
       </p>
     </Html>

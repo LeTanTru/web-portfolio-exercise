@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import { styles } from '../styles';
 import { navLinks } from '../constants';
 import { logo, menu, close } from '../assets';
+import ZoomText from './Zoom';
+import WaveText from './WaveText';
 
 const Navbar = () => {
   const [active, setActive] = useState('');
@@ -21,12 +23,9 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt='logo' className='object-container h-9 w-9' />
-          <p className='cursor-pointer text-[18px] font-bold text-white'>
-            Le Tan Tru &nbsp;
-            <span className='hidden sm:inline'>
-              |&nbsp; Front-end Web Developer
-            </span>
+          <img src={logo} alt='logo' className='object-container h-9 w-9 animate-zoom' />
+          <p className='cursor-pointer text-[20px] font-bold text-white'>
+            <WaveText delay={0.05} text='Le Tan Tru | Front-end Web Developer' />
           </p>
         </Link>
         <ul className='hidden list-none gap-10 sm:flex'>
