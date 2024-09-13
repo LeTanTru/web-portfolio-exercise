@@ -31,12 +31,12 @@ const About = () => {
     <>
       <motion.div variant={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <h2 className={styles.sectionHeadText}>Overview</h2>
       </motion.div>
 
       <motion.p
         variant={fadeIn('', '', 0.1, 1)}
-        className='mt-4 max-w-3xl text-[18px] leading-[30px] text-secondary'
+        className='mt-4 text-justify text-[18px] leading-[30px] text-secondary'
       >
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, aut
         nam, hic laudantium nostrum deleniti libero molestias illum placeat

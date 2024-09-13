@@ -1,8 +1,7 @@
 import { motion } from 'framer-motion';
 import { styles } from '../styles';
 import { ComputersCanvas } from './canvas';
-import { Cursor, useTypewriter } from 'react-simple-typewriter';
-import WaveText from './WaveText.jsx';
+import { useTypewriter } from 'react-simple-typewriter';
 
 const Hero = () => {
   const [text] = useTypewriter({
@@ -19,13 +18,11 @@ const Hero = () => {
           <div className='h-5 w-5 rounded-full bg-[#915eff]' />
           <div className='violet-gradient h-40 w-1 bg-black sm:h-80'></div>
         </div>
-        <div className=''>
-          <h1
-            className={`${styles.heroHeadText} block bg-gradient-to-r from-[#834d9b] via-[#a044ff] to-[#d04ed6] bg-clip-text text-transparent`}
-          >
-            <span className=''>{text}</span>
-            <span>
-              <Cursor />
+        <div className='w-full text-center'>
+          <h1 className={`${styles.heroHeadText} block`}>
+            <span className='pink-text-gradient'>{text}</span>
+            <span className='pink-text-gradient smooth-blinking-cursor ml-2'>
+              |
             </span>
           </h1>
           <p

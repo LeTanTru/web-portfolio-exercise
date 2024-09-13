@@ -62,55 +62,68 @@ const services = [
 const technologies = [
   {
     name: 'HTML 5',
-    icon: html
+    icon: html,
+    color: 'bg-gradient-to-r from-yellow-600 to-red-600'
   },
   {
     name: 'CSS 3',
-    icon: css
+    icon: css,
+    color: 'bg-gradient-to-r from-indigo-500 to-blue-500'
   },
   {
     name: 'JavaScript',
-    icon: javascript
+    icon: javascript,
+    color: 'bg-gradient-to-r from-amber-200 to-yellow-400'
   },
   {
     name: 'TypeScript',
-    icon: typescript
+    icon: typescript,
+    color: 'bg-gradient-to-r from-blue-500 to-blue-600'
   },
   {
     name: 'React JS',
-    icon: reactjs
+    icon: reactjs,
+    color: 'bg-gradient-to-r from-indigo-400 to-cyan-400'
   },
   {
     name: 'Redux Toolkit',
-    icon: redux
+    icon: redux,
+    color: 'bg-gradient-to-r from-fuchsia-500 to-pink-500'
   },
   {
     name: 'Tailwind CSS',
-    icon: tailwind
+    icon: tailwind,
+    color: 'bg-gradient-to-r from-sky-400 to-cyan-300'
   },
   {
     name: 'Node JS',
-    icon: nodejs
+    icon: nodejs,
+    color: 'bg-gradient-to-r from-emerald-500 to-lime-600'
   },
   {
     name: 'MongoDB',
-    icon: mongodb
+    icon: mongodb,
+    color: 'bg-gradient-to-r from-lime-400 to-lime-500'
   },
   {
     name: 'Three JS',
-    icon: threejs
+    icon: threejs,
+    color: 'bg-gradient-to-r from-gray-400 to-slate-600'
   },
   {
     name: 'git',
-    icon: git
+    icon: git,
+    color: 'bg-gradient-to-r from-orange-400 to-rose-400'
   },
   {
     name: 'figma',
-    icon: figma
+    icon: figma,
+    color: 'bg-gradient-to-r from-rose-400 to-red-500'
   },
   {
     name: 'docker',
-    icon: docker
+    icon: docker,
+    color: 'bg-gradient-to-r from-blue-600 to-violet-600'
   }
 ];
 
