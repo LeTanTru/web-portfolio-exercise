@@ -9,14 +9,17 @@ import {
   Navbar,
   Tech,
   Works,
-  StarsCanvas
+  StarsCanvas,
+  Footer
 } from './components';
+import Particle from './components/Particle';
 
 const App = () => {
   return (
     <BrowserRouter>
-      <div className='relative z-0 bg-primary'>
-        <div className='bg-hero-pattern bg-cover bg-center bg-no-repeat'>
+      <Particle></Particle>
+      <div className='relative bg-primary'>
+        <div className='w-full bg-hero-pattern bg-cover bg-center bg-no-repeat'>
           <Navbar />
           <Hero />
         </div>
@@ -26,10 +29,11 @@ const App = () => {
 
         <Works />
         <Feedbacks />
-        <div className='relative z-0'>
+        <div className='z-2 relative'>
           <Contact />
           <StarsCanvas />
         </div>
+        <Footer />
       </div>
     </BrowserRouter>
   );

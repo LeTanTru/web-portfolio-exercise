@@ -271,3 +271,8 @@
   display: inline-block;
   animation: smooth-blink 0.8s infinite linear; /* Adjusted duration for smoothness */
 }
+
+#tsparticles {
+  z-index: 1;
+  position: relative;
+}

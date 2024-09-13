@@ -275,4 +275,27 @@ const projects = [
   }
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+const socials = [
+  {
+    name: 'facebook',
+    icon: '/facebook-2.svg'
+  },
+  {
+    name: 'instagram',
+    icon: '/instagram.svg'
+  },
+  {
+    name: 'github',
+    icon: '/github.svg'
+  },
+  {
+    name: 'twitter',
+    icon: '/twitter.svg'
+  },
+  {
+    name: 'linkedin',
+    icon: '/linkedin.svg'
+  }
+];
+
+export { services, technologies, experiences, testimonials, projects, socials };

@@ -12,7 +12,7 @@ const Hero = () => {
   return (
     <section className='relative mx-auto h-screen w-full'>
       <div
-        className={`${styles.paddingX} absolute inset-0 top-[120px] mx-auto flex max-w-7xl flex-row items-start gap-5`}
+        className={`${styles.paddingX} z-1 absolute inset-0 top-[120px] mx-auto flex max-w-7xl flex-row items-start gap-5`}
       >
         <div className='mt-5 flex flex-col items-center justify-center'>
           <div className='h-5 w-5 rounded-full bg-[#915eff]' />
@@ -33,7 +33,7 @@ const Hero = () => {
         </div>
       </div>
       <ComputersCanvas />
-      <div className='absolute bottom-32 flex w-full items-center justify-center xs:bottom-10'>
+      <div className='z[1] absolute bottom-32 z-[1] flex w-full items-center justify-center xs:bottom-10'>
         <a href='#about'>
           <div className='flex h-[64px] w-[35px] items-center justify-center rounded-3xl border-4 border-solid border-secondary'>
             <motion.div
