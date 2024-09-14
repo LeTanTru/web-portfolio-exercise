@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import { BrowserRouter } from 'react-router-dom';
 
 import {
@@ -12,13 +13,25 @@ import {
   StarsCanvas,
   Footer
 } from './components';
-import Particle from './components/Particle';
+import Particle from '@components/Particle';
+import ScrollProgressBar from '@components/ScrollProgressBar';
+import Loading from '@components/Loading';
 
 const App = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    window.addEventListener('load', () => {
+      setLoading(false);
+    });
+  }, []);
+
   return (
     <BrowserRouter>
-      <Particle></Particle>
-      <div className='relative bg-primary'>
+      {loading && <Loading />}
+      <Particle />
+      <div className={`relative bg-primary ${loading ? 'hidden' : ''}`}>
+        <ScrollProgressBar />
         <div className='w-full bg-hero-pattern bg-cover bg-center bg-no-repeat'>
           <Navbar />
           <Hero />
@@ -26,10 +39,9 @@ const App = () => {
         <About />
         <Experience />
         <Tech />
-
         <Works />
         <Feedbacks />
-        <div className='z-2 relative'>
+        <div className='relative z-2'>
           <Contact />
           <StarsCanvas />
         </div>
@@ -38,4 +50,5 @@ const App = () => {
     </BrowserRouter>
   );
 };
+
 export default App;
