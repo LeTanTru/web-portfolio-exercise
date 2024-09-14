@@ -33,6 +33,8 @@ import emailList from './emailList.png';
 import survey from './survey.png';
 import highSchool from './an-nghia-high-school.png';
 import hcmute from './hcmute.png';
+import emailListUpdate from './emailListUpdate.png';
+import ch05_email from './ch05_email.png';
 
 export {
   logo,
@@ -66,5 +68,7 @@ export {
   emailList,
   survey,
   highSchool,
-  hcmute
+  hcmute,
+  emailListUpdate,
+  ch05_email
 };
