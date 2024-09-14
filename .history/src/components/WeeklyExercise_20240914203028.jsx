@@ -90,7 +90,7 @@ const Exercise = () => {
               Live Demo
               <img src='/telegram.svg' className='ml-2' />
             </span>
-            &nbsp; to experience website. Click the github icon &nbsp;
+            &nbsp; to experience website. Click the github icon&nbsp;
             <span className='black-gradient inline-flex h-10 w-10 cursor-pointer items-center justify-center rounded-full'>
               <img src={github} className='h-1/2 w-1/2 object-contain' />
             </span>

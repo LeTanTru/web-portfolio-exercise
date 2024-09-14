@@ -186,7 +186,7 @@ const testimonials = [
   }
 ];
 
-const projects = [
+const weeklyExercises = [
   {
     name: 'Email List',
     description: 'Basic website with Java JSP Servlet with MVC model.',
@@ -276,6 +276,8 @@ const projects = [
   }
 ];
 
+const projects = [];
+
 const socials = [
   {
     name: 'facebook',
@@ -299,4 +301,12 @@ const socials = [
   }
 ];
 
-export { services, technologies, experiences, testimonials, projects, socials };
+export {
+  services,
+  technologies,
+  experiences,
+  testimonials,
+  weeklyExercises,
+  socials,
+  projects
+};

@@ -49,7 +49,7 @@ const App = () => {
         <Experience />
         <Tech />
         <WeeklyExercise />
-        {/* <Project /> */}
+        <Project />
         <Feedbacks />
         <div className='relative z-2'>
           <Contact />
