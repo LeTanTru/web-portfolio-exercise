@@ -12,7 +12,8 @@ const ProjectCard = ({
   description,
   tags,
   image,
-  source_code_link
+  source_code_link,
+  link
 }) => {
   return (
     <motion.div variants={fadeIn('up', 'spring', index * 0.5, 0.75)}>
@@ -24,7 +25,7 @@ const ProjectCard = ({
           <img
             src={image}
             alt={name}
-            className='h-full w-full rounded-2xl object-cover'
+            className='h-full w-full rounded-2xl object-contain'
           />
           <div className='card-img_hover absolute inset-0 m-3 flex justify-end'>
             <div
@@ -56,7 +57,11 @@ const ProjectCard = ({
             ))}
           </div>
           <div className='flex'>
-            <a href='#' className='flex text-sm text-purple-400'>
+            <a
+              href={link}
+              className='flex text-sm text-purple-400'
+              target='_blank'
+            >
               Live demo
             </a>
             <img src='/telegram.svg' className='ml-2' />
@@ -67,7 +72,7 @@ const ProjectCard = ({
   );
 };
 
-const Projects = () => {
+const Project = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -93,4 +98,4 @@ const Projects = () => {
     </>
   );
 };
-export default SectionWrapper(Projects, 'projects');
+export default SectionWrapper(Project, 'projects');

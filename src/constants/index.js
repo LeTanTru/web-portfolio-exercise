@@ -19,10 +19,11 @@ import {
   starbucks,
   tesla,
   shopify,
-  carrent,
+  emailList,
   jobit,
   tripguide,
-  threejs
+  threejs,
+  survey
 } from '../assets';
 
 export const navLinks = [
@@ -35,7 +36,11 @@ export const navLinks = [
     title: 'Work'
   },
   {
-    id: 'projects',
+    id: 'exercise',
+    title: 'Weekly Exercise'
+  },
+  {
+    id: 'project',
     title: 'Projects'
   },
   {
@@ -215,62 +220,63 @@ const testimonials = [
 
 const projects = [
   {
-    name: 'Car Rent',
-    description:
-      'Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.',
+    name: 'Email List',
+    description: 'Basic website with Java JSP Servlet with MVC model.',
     tags: [
       {
-        name: 'react',
+        name: 'Java',
         color: 'blue-text-gradient'
       },
       {
-        name: 'mongodb',
+        name: 'JSP',
         color: 'green-text-gradient'
       },
       {
-        name: 'tailwind',
+        name: 'Servlet',
         color: 'pink-text-gradient'
       }
     ],
-    image: carrent,
-    source_code_link: 'https://github.com/'
+    image: emailList,
+    source_code_link: 'https://github.com/',
+    link: 'https://two2110447javawebdeploy.onrender.com/Email/index.html'
   },
   {
-    name: 'Job IT',
+    name: 'Murach Survey',
     description:
-      'Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.',
+      'Work with form elements with Java JSP Servlet with MVC Model.',
     tags: [
       {
-        name: 'react',
+        name: 'Java',
         color: 'blue-text-gradient'
       },
       {
-        name: 'restapi',
+        name: 'JSP',
         color: 'green-text-gradient'
       },
       {
-        name: 'scss',
+        name: 'Servlet',
         color: 'pink-text-gradient'
       }
     ],
-    image: jobit,
-    source_code_link: 'https://github.com/'
+    image: survey,
+    source_code_link: 'https://github.com/',
+    link: 'https://two2110447javawebdeploy.onrender.com/W4_22110447/views/index.html'
   },
   {
-    name: 'Trip Guide',
+    name: 'Email List Update',
     description:
-      'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
+      'Update Email List with validate input and keep input data when return the main form.',
     tags: [
       {
-        name: 'nextjs',
+        name: 'Java',
         color: 'blue-text-gradient'
       },
       {
-        name: 'supabase',
+        name: 'JSP',
         color: 'green-text-gradient'
       },
       {
-        name: 'css',
+        name: 'Servlet',
         color: 'pink-text-gradient'
       }
     ],

@@ -12,7 +12,7 @@ const Hero = () => {
   return (
     <section className='relative mx-auto h-screen w-full'>
       <div
-        className={`${styles.paddingX} z-1 absolute inset-0 top-[120px] mx-auto flex max-w-7xl flex-row items-start gap-5`}
+        className={`${styles.paddingX} absolute inset-0 top-[120px] z-1 mx-auto flex max-w-7xl flex-row items-start gap-5`}
       >
         <div className='mt-5 flex flex-col items-center justify-center'>
           <div className='h-5 w-5 rounded-full bg-[#915eff]' />

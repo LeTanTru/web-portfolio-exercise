@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter } from 'react-router-dom';
 
 import {
@@ -9,21 +9,30 @@ import {
   Hero,
   Navbar,
   Tech,
-  Works,
+  Project,
   StarsCanvas,
-  Footer
+  Footer,
+  WeeklyExercise
 } from './components';
-import Particle from '@components/Particle';
+import Particle from './components/Particle';
 import ScrollProgressBar from '@components/ScrollProgressBar';
-import Loading from '@components/Loading';
+import Loading from './components/Loading';
 
 const App = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    window.addEventListener('load', () => {
-      setLoading(false);
-    });
+    const handleLoad = () => {
+      setTimeout(() => {
+        setLoading(false);
+      }, 1000);
+    };
+
+    window.addEventListener('load', handleLoad);
+
+    return () => {
+      window.removeEventListener('load', handleLoad);
+    };
   }, []);
 
   return (
@@ -39,7 +48,8 @@ const App = () => {
         <About />
         <Experience />
         <Tech />
-        <Works />
+        <WeeklyExercise />
+        {/* <Project /> */}
         <Feedbacks />
         <div className='relative z-2'>
           <Contact />
