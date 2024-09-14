@@ -8,6 +8,7 @@ import WaveText from './WaveText';
 
 const Navbar = () => {
   const [active, setActive] = useState('');
+  console.log(active);
   const [toggle, setToggle] = useState(false);
   return (
     <>
@@ -39,7 +40,8 @@ const Navbar = () => {
             {navLinks.map((navLink) => (
               <li
                 key={navLink.id}
-                className={`${navLink.title === active ? 'text-white' : 'text-secondary'} cursor-pointer text-[18px] font-medium hover:text-white`}
+                className={`${navLink.title === active ? 'text-white' : 'text-secondary'} cursor-pointer text-[18px] font-medium transition-all hover:-translate-y-1 hover:text-white`}
+                onClick={() => setActive(navLink.title)}
               >
                 <a href={`#${navLink.id}`}>{navLink.title}</a>
               </li>
