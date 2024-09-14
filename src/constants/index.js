@@ -24,7 +24,8 @@ import {
   tripguide,
   threejs,
   survey,
-  highSchool
+  highSchool,
+  hcmute
 } from '../assets';
 
 export const navLinks = [
@@ -142,44 +143,18 @@ const experiences = [
     title: 'High School Student',
     company_name: 'An Nghia High School',
     icon: highSchool,
-    iconBg: '#ffffff',
+    iconBg: '#eeeeee',
     date: '2019 - 2022',
     points: []
   },
   {
     title: 'Third-year Student',
     company_name: 'Ho Chi Minh City University of Education And Technology',
-    icon: tesla,
+    icon: hcmute,
     iconBg: '#E6DEDD',
     date: 'Sep 2022 - Present',
     points: ['Third-year Student in Faculty of Information Technology.']
   }
-  // {
-  //   title: 'Web Developer',
-  //   company_name: 'Shopify',
-  //   icon: shopify,
-  //   iconBg: '#383E56',
-  //   date: 'Jan 2022 - Jan 2023',
-  //   points: [
-  //     'Developing and maintaining web applications using React.js and other related technologies.',
-  //     'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-  //     'Implementing responsive design and ensuring cross-browser compatibility.',
-  //     'Participating in code reviews and providing constructive feedback to other developers.'
-  //   ]
-  // },
-  // {
-  //   title: 'Full stack Developer',
-  //   company_name: 'Meta',
-  //   icon: meta,
-  //   iconBg: '#E6DEDD',
-  //   date: 'Jan 2023 - Present',
-  //   points: [
-  //     'Developing and maintaining web applications using React.js and other related technologies.',
-  //     'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-  //     'Implementing responsive design and ensuring cross-browser compatibility.',
-  //     'Participating in code reviews and providing constructive feedback to other developers.'
-  //   ]
-  // }
 ];
 
 const testimonials = [

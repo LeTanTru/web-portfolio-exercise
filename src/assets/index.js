@@ -32,6 +32,7 @@ import tripguide from './tripguide.png';
 import emailList from './emailList.png';
 import survey from './survey.png';
 import highSchool from './an-nghia-high-school.png';
+import hcmute from './hcmute.png';
 
 export {
   logo,
@@ -64,5 +65,6 @@ export {
   tripguide,
   emailList,
   survey,
-  highSchool
+  highSchool,
+  hcmute
 };
