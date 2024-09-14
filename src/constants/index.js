@@ -23,7 +23,8 @@ import {
   jobit,
   tripguide,
   threejs,
-  survey
+  survey,
+  highSchool
 } from '../assets';
 
 export const navLinks = [
@@ -138,57 +139,47 @@ const technologies = [
 
 const experiences = [
   {
-    title: 'React.js Developer',
-    company_name: 'Starbucks',
-    icon: starbucks,
-    iconBg: '#383E56',
-    date: 'March 2020 - April 2021',
-    points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.'
-    ]
+    title: 'High School Student',
+    company_name: 'An Nghia High School',
+    icon: highSchool,
+    iconBg: '#ffffff',
+    date: '2019 - 2022',
+    points: []
   },
   {
-    title: 'React Native Developer',
-    company_name: 'Tesla',
+    title: 'Third-year Student',
+    company_name: 'Ho Chi Minh City University of Education And Technology',
     icon: tesla,
     iconBg: '#E6DEDD',
-    date: 'Jan 2021 - Feb 2022',
-    points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.'
-    ]
-  },
-  {
-    title: 'Web Developer',
-    company_name: 'Shopify',
-    icon: shopify,
-    iconBg: '#383E56',
-    date: 'Jan 2022 - Jan 2023',
-    points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.'
-    ]
-  },
-  {
-    title: 'Full stack Developer',
-    company_name: 'Meta',
-    icon: meta,
-    iconBg: '#E6DEDD',
-    date: 'Jan 2023 - Present',
-    points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.'
-    ]
+    date: 'Sep 2022 - Present',
+    points: ['Third-year Student in Faculty of Information Technology.']
   }
+  // {
+  //   title: 'Web Developer',
+  //   company_name: 'Shopify',
+  //   icon: shopify,
+  //   iconBg: '#383E56',
+  //   date: 'Jan 2022 - Jan 2023',
+  //   points: [
+  //     'Developing and maintaining web applications using React.js and other related technologies.',
+  //     'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
+  //     'Implementing responsive design and ensuring cross-browser compatibility.',
+  //     'Participating in code reviews and providing constructive feedback to other developers.'
+  //   ]
+  // },
+  // {
+  //   title: 'Full stack Developer',
+  //   company_name: 'Meta',
+  //   icon: meta,
+  //   iconBg: '#E6DEDD',
+  //   date: 'Jan 2023 - Present',
+  //   points: [
+  //     'Developing and maintaining web applications using React.js and other related technologies.',
+  //     'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
+  //     'Implementing responsive design and ensuring cross-browser compatibility.',
+  //     'Participating in code reviews and providing constructive feedback to other developers.'
+  //   ]
+  // }
 ];
 
 const testimonials = [
@@ -261,28 +252,28 @@ const projects = [
     image: survey,
     source_code_link: 'https://github.com/',
     link: 'https://two2110447javawebdeploy.onrender.com/W4_22110447/views/index.html'
-  },
-  {
-    name: 'Email List Update',
-    description:
-      'Update Email List with validate input and keep input data when return the main form.',
-    tags: [
-      {
-        name: 'Java',
-        color: 'blue-text-gradient'
-      },
-      {
-        name: 'JSP',
-        color: 'green-text-gradient'
-      },
-      {
-        name: 'Servlet',
-        color: 'pink-text-gradient'
-      }
-    ],
-    image: tripguide,
-    source_code_link: 'https://github.com/'
   }
+  // {
+  //   name: 'Email List Update',
+  //   description:
+  //     'Update Email List with validate input and keep input data when return the main form.',
+  //   tags: [
+  //     {
+  //       name: 'Java',
+  //       color: 'blue-text-gradient'
+  //     },
+  //     {
+  //       name: 'JSP',
+  //       color: 'green-text-gradient'
+  //     },
+  //     {
+  //       name: 'Servlet',
+  //       color: 'pink-text-gradient'
+  //     }
+  //   ],
+  //   image: tripguide,
+  //   source_code_link: 'https://github.com/'
+  // }
 ];
 
 const socials = [

@@ -82,7 +82,7 @@ const Exercise = () => {
       <div>
         <motion.p
           variants={fadeIn('', '', 0.1, 1)}
-          className='mt-3 text-[18px] leading-[1.5] text-secondary'
+          className='mt-3 text-[18px] leading-[1.5] text-secondary max-w-5xl'
         >
           <p>
             This section shows live demo and source code. Click&nbsp;

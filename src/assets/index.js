@@ -31,6 +31,7 @@ import jobit from './jobit.png';
 import tripguide from './tripguide.png';
 import emailList from './emailList.png';
 import survey from './survey.png';
+import highSchool from './an-nghia-high-school.png';
 
 export {
   logo,
@@ -62,5 +63,6 @@ export {
   jobit,
   tripguide,
   emailList,
-  survey
+  survey,
+  highSchool
 };
