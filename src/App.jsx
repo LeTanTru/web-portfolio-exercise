@@ -45,34 +45,26 @@ const App = () => {
 
   return (
     <BrowserRouter>
-      {isMobile ? (
-        <div className='suggestion'>
-          For the best experience, please use a PC or laptop.
+      {loading && <Loading />}
+      <Particle />
+      <div className={`relative bg-primary ${loading ? 'hidden' : ''}`}>
+        <ScrollProgressBar />
+        <div className='w-full bg-hero-pattern bg-cover bg-center bg-no-repeat'>
+          <Navbar />
+          <Hero />
         </div>
-      ) : (
-        <>
-          {loading && <Loading />}
-          <Particle />
-          <div className={`relative bg-primary ${loading ? 'hidden' : ''}`}>
-            <ScrollProgressBar />
-            <div className='w-full bg-hero-pattern bg-cover bg-center bg-no-repeat'>
-              <Navbar />
-              <Hero />
-            </div>
-            <About />
-            <Experience />
-            <Tech />
-            <WeeklyExercise />
-            {/* <Project /> */}
-            <Feedbacks />
-            <div className='relative z-2'>
-              <Contact />
-              <StarsCanvas />
-            </div>
-            <Footer />
-          </div>
-        </>
-      )}
+        <About />
+        <Experience />
+        <Tech />
+        <WeeklyExercise />
+        {/* <Project /> */}
+        <Feedbacks />
+        <div className='relative z-2'>
+          <Contact />
+          <StarsCanvas />
+        </div>
+        <Footer />
+      </div>
     </BrowserRouter>
   );
 };

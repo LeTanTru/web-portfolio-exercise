@@ -36,7 +36,7 @@ const Navbar = () => {
               />
             </p>
           </Link>
-          <ul className='hidden list-none gap-10 sm:flex'>
+          <ul className='ml-auto hidden list-none gap-10 md:ml-5 lg:flex md:gap-5 lg:flex'>
             {navLinks.map((navLink) => (
               <li
                 key={navLink.id}
@@ -47,7 +47,7 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-          <div className='flex1 flex items-center justify-end sm:hidden'>
+          <div className='md:flex-0 block flex flex-1 items-center justify-end lg:hidden'>
             <img
               src={!toggle ? menu : close}
               alt='menu'

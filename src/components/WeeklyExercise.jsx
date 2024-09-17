@@ -19,7 +19,7 @@ const ExerciseCard = ({
     <motion.div variants={fadeIn('up', 'spring', index * 0.5, 0.75)}>
       <Tilt
         options={{ max: 45, scale: 1, speed: 450 }}
-        className='w-full rounded-2xl bg-tertiary p-5 sm:w-[360px]'
+        className='mx-auto w-full rounded-2xl bg-tertiary p-5 sm:w-[360px]'
       >
         <div className='relative h-[250px] w-full'>
           <img
@@ -84,7 +84,7 @@ const Exercise = () => {
           variants={fadeIn('', '', 0.1, 1)}
           className='mt-3 max-w-3xl text-[18px] leading-[1.5] text-secondary'
         >
-          <p>
+          <p className='text-center md:text-left'>
             This section shows live demo and source code. Click&nbsp;
             <span className='inline-flex text-[18px] text-purple-400'>
               Live Demo
@@ -97,7 +97,7 @@ const Exercise = () => {
             &nbsp; on the top right to get source code.
           </p>
         </motion.p>
-        <div className='mt-20 flex flex-wrap gap-7'>
+        <div className='lg: mx-auto mt-20 grid grid-cols-1 gap-x-5 gap-y-5 lg:grid-cols-2 xl:grid-cols-3'>
           {weeklyExercises.map((project, index) => (
             <ExerciseCard key={`project-${index}`} {...project} index={index} />
           ))}

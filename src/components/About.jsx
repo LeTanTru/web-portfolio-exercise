@@ -7,10 +7,10 @@ import { SectionWrapper } from '../hoc/index';
 
 const ServiceCard = ({ index, title, icon }) => {
   return (
-    <Tilt className='w-full xs:w-[250px]'>
+    <Tilt className='mx-auto w-full xs:w-[250px]'>
       <motion.div
         variant={fadeIn('right', 'spring', 0.5 * index, 0.75)}
-        className='green-pink-gradient w-full rounded-[20px] p-[2px] shadow-card'
+        className='green-pink-gradient mx-auto w-full rounded-[20px] p-[2px] shadow-card'
       >
         <div
           options={{ max: 45, scale: 1, speed: 450 }}
@@ -28,7 +28,7 @@ const ServiceCard = ({ index, title, icon }) => {
 
 const About = () => {
   return (
-    <div className='z-1 relative'>
+    <div className='relative z-1'>
       <motion.div variant={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview</h2>
@@ -44,7 +44,7 @@ const About = () => {
         alias.
       </motion.p>
 
-      <div className='mt-20 flex flex-wrap gap-10'>
+      <div className='mt-20 grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
