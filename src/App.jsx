@@ -35,28 +35,46 @@ const App = () => {
     };
   }, []);
 
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+    if (/android/i.test(userAgent) || /iPad|iPhone|iPod/.test(userAgent)) {
+      setIsMobile(true);
+    }
+  }, []);
+
   return (
     <BrowserRouter>
-      {/* {loading && <Loading />} */}
-      <Particle />
-      <div className={`relative bg-primary`}>
-        <ScrollProgressBar />
-        <div className='w-full bg-hero-pattern bg-cover bg-center bg-no-repeat'>
-          <Navbar />
-          <Hero />
+      {isMobile ? (
+        <div className='fixed flex h-full w-full items-center justify-center'>
+          <p className='text-xl font-bold text-purple-700'>
+            This website only supports on PC or Laptop.
+          </p>
         </div>
-        <About />
-        <Experience />
-        <Tech />
-        <WeeklyExercise />
-        {/* <Project /> */}
-        <Feedbacks />
-        <div className='relative z-2'>
-          <Contact />
-          <StarsCanvas />
-        </div>
-        <Footer />
-      </div>
+      ) : (
+        <>
+          {loading && <Loading />}
+          <Particle />
+          <div className={`relative bg-primary`}>
+            <ScrollProgressBar />
+            <div className='w-full bg-hero-pattern bg-cover bg-center bg-no-repeat'>
+              <Navbar />
+              <Hero />
+            </div>
+            <About />
+            <Experience />
+            <Tech />
+            <WeeklyExercise />
+            {/* <Project /> */}
+            <Feedbacks />
+            <div className='relative z-2'>
+              <Contact />
+              <StarsCanvas />
+            </div>
+            <Footer />
+          </div>
+        </>
+      )}
     </BrowserRouter>
   );
 };
