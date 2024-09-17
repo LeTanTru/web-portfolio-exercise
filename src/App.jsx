@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { BrowserRouter } from 'react-router-dom';
 
 import {
@@ -49,7 +49,7 @@ const App = () => {
         <Experience />
         <Tech />
         <WeeklyExercise />
-        <Project />
+        {/* <Project /> */}
         <Feedbacks />
         <div className='relative z-2'>
           <Contact />

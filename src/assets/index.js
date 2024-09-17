@@ -35,6 +35,7 @@ import highSchool from './an-nghia-high-school.png';
 import hcmute from './hcmute.png';
 import emailListUpdate from './emailListUpdate.png';
 import ch05_email from './ch05_email.png';
+import _3dRotation from './3d-rotation.png';
 
 export {
   logo,
@@ -70,5 +71,6 @@ export {
   highSchool,
   hcmute,
   emailListUpdate,
-  ch05_email
+  ch05_email,
+  _3dRotation
 };

@@ -290,30 +290,28 @@
   align-items: center;
 }
 
-.spinner {
-  border: 4px solid rgba(255, 255, 255, 0.3);
-  border-radius: 50%;
-  border-top: 4px solid #3498db;
-  width: 40px;
-  height: 40px;
-  -webkit-animation: spin 1s linear infinite;
-  animation: spin 1s linear infinite;
+.loader {
+  color: #fff;
+
+  font-family: Consolas, Menlo, Monaco, monospace;
+  font-weight: bold;
+  font-size: 10vh;
+
+  opacity: 0.8;
+
+  span {
+    display: inline-block;
+    animation: pulse 0.4s alternate infinite ease-in-out;
+
+    &:nth-child(odd) {
+      animation-delay: 0.4s;
+    }
+  }
 }
 
-@-webkit-keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-  }
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
+@keyframes pulse {
+  to {
+    transform: scale(0.8);
+    opacity: 0.5;
   }
 }

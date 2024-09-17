@@ -5,6 +5,7 @@ import { SectionWrapper } from '../hoc/index';
 import { projects } from '../constants/index';
 import { Tilt } from 'react-tilt';
 import { github } from '../assets/index';
+import WaveText from './WaveText';
 
 const ProjectCard = ({
   index,
@@ -90,9 +91,19 @@ const Project = () => {
           incidunt eaque quia quidem?
         </motion.p>
         <div className='mt-20 flex flex-wrap gap-7'>
-          {projects.map((project, index) => (
-            <ProjectCard key={`project-${index}`} {...project} index={index} />
-          ))}
+          {projects?.length > 0 ? (
+            projects.map((project, index) => (
+              <ProjectCard
+                key={`project-${index}`}
+                {...project}
+                index={index}
+              />
+            ))
+          ) : (
+            <div className='mx-auto text-center text-[50px]'>
+              <WaveText text='Updating...' />
+            </div>
+          )}
         </div>
       </div>
     </>

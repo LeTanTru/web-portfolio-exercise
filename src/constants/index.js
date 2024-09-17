@@ -27,7 +27,8 @@ import {
   highSchool,
   hcmute,
   emailListUpdate,
-  ch05_email
+  ch05_email,
+  _3dRotation
 } from '../assets';
 
 export const navLinks = [
@@ -276,7 +277,25 @@ const weeklyExercises = [
   }
 ];
 
-const projects = [];
+const projects = [
+  {
+    name: '3D rotation',
+    description: 'Infinite 3D rotation with HTML, CSS.',
+    tags: [
+      {
+        name: 'HTML',
+        color: 'blue-text-gradient'
+      },
+      {
+        name: 'CSS',
+        color: 'green-text-gradient'
+      }
+    ],
+    image: _3dRotation,
+    source_code_link: 'https://github.com/LeTanTru/3d-rotation-html-css',
+    link: 'https://3d-rotation-html-css.vercel.app/'
+  }
+];
 
 const socials = [
   {
