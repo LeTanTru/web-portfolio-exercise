@@ -1,13 +1,4 @@
-import { useEffect, useState } from 'react';
-
 const Loading = () => {
-  const [isMobile, setIsMobile] = useState(false);
-  useEffect(() => {
-    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
-    if (/android/i.test(userAgent) || /iPad|iPhone|iPod/.test(userAgent)) {
-      setIsMobile(true);
-    }
-  }, []);
   const loading = '{Loading}'.split('');
 
   return (

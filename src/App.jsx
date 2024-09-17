@@ -39,7 +39,7 @@ const App = () => {
     <BrowserRouter>
       {loading && <Loading />}
       <Particle />
-      <div className={`relative bg-primary ${loading ? 'hidden' : ''}`}>
+      <div className={`relative bg-primary`}>
         <ScrollProgressBar />
         <div className='w-full bg-hero-pattern bg-cover bg-center bg-no-repeat'>
           <Navbar />
