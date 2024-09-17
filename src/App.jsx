@@ -20,7 +20,6 @@ import Loading from './components/Loading';
 
 const App = () => {
   const [loading, setLoading] = useState(true);
-  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const handleLoad = () => {
@@ -34,13 +33,6 @@ const App = () => {
     return () => {
       window.removeEventListener('load', handleLoad);
     };
-  }, []);
-
-  useEffect(() => {
-    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
-    if (/android/i.test(userAgent) || /iPad|iPhone|iPod/.test(userAgent)) {
-      setIsMobile(true);
-    }
   }, []);
 
   return (
