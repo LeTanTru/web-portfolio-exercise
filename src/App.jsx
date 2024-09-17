@@ -20,6 +20,7 @@ import Loading from './components/Loading';
 
 const App = () => {
   const [loading, setLoading] = useState(true);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const handleLoad = () => {
@@ -35,28 +36,43 @@ const App = () => {
     };
   }, []);
 
+  useEffect(() => {
+    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+    if (/android/i.test(userAgent) || /iPad|iPhone|iPod/.test(userAgent)) {
+      setIsMobile(true);
+    }
+  }, []);
+
   return (
     <BrowserRouter>
-      {loading && <Loading />}
-      <Particle />
-      <div className={`relative bg-primary ${loading ? 'hidden' : ''}`}>
-        <ScrollProgressBar />
-        <div className='w-full bg-hero-pattern bg-cover bg-center bg-no-repeat'>
-          <Navbar />
-          <Hero />
+      {isMobile ? (
+        <div className='suggestion'>
+          For the best experience, please use a PC or laptop.
         </div>
-        <About />
-        <Experience />
-        <Tech />
-        <WeeklyExercise />
-        {/* <Project /> */}
-        <Feedbacks />
-        <div className='relative z-2'>
-          <Contact />
-          <StarsCanvas />
-        </div>
-        <Footer />
-      </div>
+      ) : (
+        <>
+          {loading && <Loading />}
+          <Particle />
+          <div className={`relative bg-primary ${loading ? 'hidden' : ''}`}>
+            <ScrollProgressBar />
+            <div className='w-full bg-hero-pattern bg-cover bg-center bg-no-repeat'>
+              <Navbar />
+              <Hero />
+            </div>
+            <About />
+            <Experience />
+            <Tech />
+            <WeeklyExercise />
+            {/* <Project /> */}
+            <Feedbacks />
+            <div className='relative z-2'>
+              <Contact />
+              <StarsCanvas />
+            </div>
+            <Footer />
+          </div>
+        </>
+      )}
     </BrowserRouter>
   );
 };
