@@ -37,26 +37,31 @@ const App = () => {
 
   return (
     <BrowserRouter>
-      {loading && <Loading />}
-      <Particle />
-      <div className={`relative bg-primary`}>
-        <ScrollProgressBar />
-        <div className='w-full bg-hero-pattern bg-cover bg-center bg-no-repeat'>
-          <Navbar />
-          <Hero />
-        </div>
-        <About />
-        <Experience />
-        <Tech />
-        <WeeklyExercise />
-        {/* <Project /> */}
-        <Feedbacks />
-        <div className='relative z-2'>
-          <Contact />
-          <StarsCanvas />
-        </div>
-        <Footer />
-      </div>
+      {loading ? (
+        <Loading />
+      ) : (
+        <>
+          <Particle />
+          <div className={`relative bg-primary`}>
+            <ScrollProgressBar />
+            <div className='w-full bg-hero-pattern bg-cover bg-center bg-no-repeat'>
+              <Navbar />
+              <Hero />
+            </div>
+            <About />
+            <Experience />
+            <Tech />
+            <WeeklyExercise />
+            {/* <Project /> */}
+            <Feedbacks />
+            <div className='relative z-2'>
+              <Contact />
+              <StarsCanvas />
+            </div>
+            <Footer />
+          </div>
+        </>
+      )}
     </BrowserRouter>
   );
 };
