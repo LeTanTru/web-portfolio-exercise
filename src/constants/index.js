@@ -15,18 +15,11 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  emailList,
-  jobit,
-  tripguide,
   threejs,
   survey,
   highSchool,
   hcmute,
-  emailListUpdate,
+  emailList,
   ch05_email,
   _3dRotation
 } from '../assets';
@@ -206,8 +199,8 @@ const weeklyExercises = [
       }
     ],
     image: emailList,
-    source_code_link: 'https://github.com/',
-    link: 'https://two2110447javawebdeploy.onrender.com/Email/index.html'
+    source_code_link: 'https://github.com/LeTanTru/Email',
+    link: 'https://two2110447javawebdeploy.onrender.com/Email/index.jsp'
   },
   {
     name: 'Murach Survey',
@@ -228,53 +221,31 @@ const weeklyExercises = [
       }
     ],
     image: survey,
-    source_code_link: 'https://github.com/',
-    link: 'https://two2110447javawebdeploy.onrender.com/W4_22110447/views/index.html'
-  },
-  {
-    name: 'Email List Update',
-    description:
-      'Update Email List with validate input and keep input data when return the main form.',
-    tags: [
-      {
-        name: 'Java',
-        color: 'blue-text-gradient'
-      },
-      {
-        name: 'JSP',
-        color: 'green-text-gradient'
-      },
-      {
-        name: 'Servlet',
-        color: 'pink-text-gradient'
-      }
-    ],
-    image: emailListUpdate,
-    source_code_link: 'https://github.com/',
-    link: 'https://two2110447javawebdeploy.onrender.com/Email51/index.jsp'
-  },
-  {
-    name: 'ch05_ex2_email',
-    description:
-      'Use annotation @WebServlet to map to /test with doGet and doPost. Call doGet by replacing index.jsp with test in the url. Call doPost when click Join Now button.',
-    tags: [
-      {
-        name: 'Java',
-        color: 'blue-text-gradient'
-      },
-      {
-        name: 'JSP',
-        color: 'green-text-gradient'
-      },
-      {
-        name: 'Servlet',
-        color: 'pink-text-gradient'
-      }
-    ],
-    image: ch05_email,
-    source_code_link: 'https://github.com/',
-    link: 'https://two2110447javawebdeploy.onrender.com/ch05_ex2_email/index.jsp'
+    source_code_link: 'https://github.com/LeTanTru/MurachServey',
+    link: 'https://two2110447javawebdeploy.onrender.com/Survey/views/index.html'
   }
+  // {
+  //   name: 'ch05_ex2_email',
+  //   description:
+  //     'Use annotation @WebServlet to map to /test with doGet and doPost. Call doGet by replacing index.jsp with test in the url. Call doPost when click Join Now button.',
+  //   tags: [
+  //     {
+  //       name: 'Java',
+  //       color: 'blue-text-gradient'
+  //     },
+  //     {
+  //       name: 'JSP',
+  //       color: 'green-text-gradient'
+  //     },
+  //     {
+  //       name: 'Servlet',
+  //       color: 'pink-text-gradient'
+  //     }
+  //   ],
+  //   image: ch05_email,
+  //   source_code_link: 'https://github.com/',
+  //   link: 'https://two2110447javawebdeploy.onrender.com/ch05_ex2_email/index.jsp'
+  // }
 ];
 
 const projects = [
