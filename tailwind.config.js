@@ -27,6 +27,9 @@ export default {
         2: '2',
         5: '5',
         999: '999'
+      },
+      transform: {
+        'custom-rotate': 'rotateX(35deg) rotateY(-45deg)'
       }
     }
   },

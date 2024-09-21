@@ -45,8 +45,13 @@ const App = () => {
 
   return (
     <BrowserRouter>
+      <div className='fixed flex h-full w-full items-center justify-center md:hidden'>
+        <p className='text-xl font-bold text-purple-700'>
+          This website only supports on PC or Laptop.
+        </p>
+      </div>
       {isMobile ? (
-        <div className='fixed flex h-full w-full items-center justify-center'>
+        <div className='fixed flex h-full w-full items-center justify-center md:hidden'>
           <p className='text-xl font-bold text-purple-700'>
             This website only supports on PC or Laptop.
           </p>

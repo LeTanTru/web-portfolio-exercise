@@ -1,7 +1,7 @@
 import { Tilt } from 'react-tilt';
 import { motion } from 'framer-motion';
 import { styles } from '../styles';
-import { services } from '../constants/index';
+import { abouts } from '../constants/index';
 import { fadeIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc/index';
 
@@ -45,7 +45,7 @@ const About = () => {
       </motion.p>
 
       <div className='mt-20 grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
-        {services.map((service, index) => (
+        {abouts.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
       </div>

@@ -49,11 +49,17 @@ const ExerciseCard = ({
           </p>
         </div>
         <div className='mt-4 flex items-end justify-between'>
-          <div className='flex flex-wrap gap-2'>
-            {tags.map((tag) => (
-              <p key={tag.name} className={`text-[14px] ${tag.color}`}>
-                #{tag.name}
-              </p>
+          <div className='flex flex-wrap'>
+            {tags.map((tag, index) => (
+              <div
+                key={tag.icon}
+                className='flex h-8 w-8 items-center justify-center rounded-full border border-white/[0.2] bg-black lg:h-10 lg:w-10'
+                style={{ transform: `translateX(-${index * 10}px)` }}
+              >
+                <a href={tag.link}>
+                  <img src={tag.icon} className='p-[2px]' />
+                </a>
+              </div>
             ))}
           </div>
           <div className='flex'>

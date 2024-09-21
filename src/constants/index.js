@@ -16,6 +16,11 @@ import {
   figma,
   docker,
   threejs,
+  vite,
+  threejsWhiteFill,
+  java,
+  jsp,
+  servlet,
   survey,
   highSchool,
   hcmute,
@@ -47,9 +52,9 @@ export const navLinks = [
   }
 ];
 
-const services = [
+const abouts = [
   {
-    title: 'Web Developer',
+    title: 'Frontend Developer',
     icon: web
   },
   {
@@ -61,7 +66,7 @@ const services = [
     icon: backend
   },
   {
-    title: 'Content Creator',
+    title: 'Volunteer',
     icon: creator
   }
 ];
@@ -186,16 +191,16 @@ const weeklyExercises = [
     description: 'Basic website with Java JSP Servlet with MVC model.',
     tags: [
       {
-        name: 'Java',
-        color: 'blue-text-gradient'
+        icon: java,
+        link: 'https://www.java.com/en/'
       },
       {
-        name: 'JSP',
-        color: 'green-text-gradient'
+        icon: jsp,
+        link: 'https://www.oracle.com/java/technologies/javaserver-white-paper.html'
       },
       {
-        name: 'Servlet',
-        color: 'pink-text-gradient'
+        icon: servlet,
+        link: 'https://tomcat.apache.org/tomcat-5.5-doc/servletapi/index.html'
       }
     ],
     image: emailList,
@@ -208,16 +213,16 @@ const weeklyExercises = [
       'Work with form elements with Java JSP Servlet with MVC Model.',
     tags: [
       {
-        name: 'Java',
-        color: 'blue-text-gradient'
+        icon: java,
+        link: 'https://www.java.com/en/'
       },
       {
-        name: 'JSP',
-        color: 'green-text-gradient'
+        icon: jsp,
+        link: 'https://www.oracle.com/java/technologies/javaserver-white-paper.html'
       },
       {
-        name: 'Servlet',
-        color: 'pink-text-gradient'
+        icon: servlet,
+        link: 'https://tomcat.apache.org/tomcat-5.5-doc/servletapi/index.html'
       }
     ],
     image: survey,
@@ -230,16 +235,16 @@ const weeklyExercises = [
       'Use annotation @WebServlet to map to /test with doGet and doPost. Call doGet by replacing index.jsp with test in the url. Call doPost when click Join Now button.',
     tags: [
       {
-        name: 'Java',
-        color: 'blue-text-gradient'
+        icon: java,
+        link: 'https://www.java.com/en/'
       },
       {
-        name: 'JSP',
-        color: 'green-text-gradient'
+        icon: jsp,
+        link: 'https://www.oracle.com/java/technologies/javaserver-white-paper.html'
       },
       {
-        name: 'Servlet',
-        color: 'pink-text-gradient'
+        icon: servlet,
+        link: 'https://tomcat.apache.org/tomcat-5.5-doc/servletapi/index.html'
       }
     ],
     image: ch05_email,
@@ -291,12 +296,20 @@ const socials = [
   }
 ];
 
+const powers = [
+  { tech: vite, link: 'https://vitejs.dev/' },
+  { tech: reactjs, link: 'https://react.dev/' },
+  { tech: threejsWhiteFill, link: 'https://threejs.org/' },
+  { tech: tailwind, link: 'https://tailwindcss.com/' }
+];
+
 export {
-  services,
+  abouts,
   technologies,
   experiences,
   testimonials,
   weeklyExercises,
   socials,
-  projects
+  projects,
+  powers
 };

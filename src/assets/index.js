@@ -20,6 +20,11 @@ import redux from './tech/redux.png';
 import tailwind from './tech/tailwind.png';
 import typescript from './tech/typescript.png';
 import threejs from './tech/threejs.svg';
+import threejsWhiteFill from './tech/threejs-white-fill.svg';
+import java from './tech/java.png';
+import jsp from './tech/jsp.png';
+import servlet from './tech/servlet.png';
+import vite from './tech/vite.svg';
 
 import meta from './company/meta.png';
 import shopify from './company/shopify.png';
@@ -59,6 +64,11 @@ export {
   tailwind,
   typescript,
   threejs,
+  threejsWhiteFill,
+  java,
+  jsp,
+  servlet,
+  vite,
   meta,
   shopify,
   starbucks,

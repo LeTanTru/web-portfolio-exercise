@@ -306,11 +306,47 @@
       animation-delay: 0.4s;
     }
   }
+  &-item {
+    perspective: 800px;
+    animation: var(--animation-name) 1s linear infinite;
+  }
 }
 
 @keyframes pulse {
   to {
     transform: scale(0.8);
     opacity: 0.5;
+  }
+}
+
+.loader-item:nth-child(1) {
+  --animation-name: rotate1;
+}
+
+.loader-item:nth-child(2) {
+  --animation-name: rotate2;
+  animation-delay: 0.025s
+}
+
+.loader-item:nth-child(3) {
+  --animation-name: rotate3;
+  animation-delay: 0.05s
+}
+
+@keyframes rotate1 {
+  to {
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+  }
+}
+
+@keyframes rotate2 {
+  to {
+    transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+  }
+}
+
+@keyframes rotate3 {
+  to {
+    transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
   }
 }

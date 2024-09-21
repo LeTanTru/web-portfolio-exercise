@@ -1,10 +1,30 @@
-import { socials } from '../constants/index';
+import { powers, socials } from '../constants/index';
 import { SectionWrapper } from '../hoc/index';
 
 const Footer = () => {
+
   return (
     <div className='flex items-center justify-between'>
       <h3>Copyright © 2024 Le Tan Tru</h3>
+      <div className='flex items-center gap-x-3'>
+        <h4>Power by</h4>
+        <div className='flex'>
+          {powers.map((item, index) => (
+            <div
+              key={item.tech}
+              className='flex h-8 w-8 items-center justify-center rounded-full border border-white/[0.2] bg-black lg:h-10 lg:w-10'
+              style={{ transform: `translateX(-${index * 10}px)` }}
+            >
+              <a href={item.link}>
+                <img
+                  src={item.tech}
+                  className='h-full w-full object-cover p-2'
+                />
+              </a>
+            </div>
+          ))}
+        </div>
+      </div>
       <div className='flex items-center justify-center gap-x-3'>
         {socials.map((social) => (
           <div
