@@ -45,41 +45,34 @@ const App = () => {
 
   return (
     <BrowserRouter>
-      <div className='fixed flex h-full w-full items-center justify-center md:hidden'>
+      <div className='fixed z-999 flex h-full w-full items-center justify-center md:hidden bg-black-200'>
         <p className='text-xl font-bold text-purple-700'>
-          This website only supports on PC or Laptop.
+          Unsupported device !!!
         </p>
       </div>
-      {isMobile ? (
-        <div className='fixed flex h-full w-full items-center justify-center md:hidden'>
-          <p className='text-xl font-bold text-purple-700'>
-            This website only supports on PC or Laptop.
-          </p>
-        </div>
-      ) : (
-        <>
-          {loading && <Loading />}
-          <Particle />
-          <div className={`relative bg-primary`}>
-            <ScrollProgressBar />
-            <div className='w-full bg-hero-pattern bg-cover bg-center bg-no-repeat'>
-              <Navbar />
-              <Hero />
-            </div>
-            <About />
-            <Experience />
-            <Tech />
-            <WeeklyExercise />
-            {/* <Project /> */}
-            <Feedbacks />
-            <div className='relative z-2'>
-              <Contact />
-              <StarsCanvas />
-            </div>
-            <Footer />
+
+      <div className='hidden md:block'>
+        {loading && <Loading />}
+        <Particle />
+        <div className={`relative bg-primary`}>
+          <ScrollProgressBar />
+          <div className='w-full bg-hero-pattern bg-cover bg-center bg-no-repeat'>
+            <Navbar />
+            <Hero />
           </div>
-        </>
-      )}
+          <About />
+          <Experience />
+          <Tech />
+          <WeeklyExercise />
+          {/* <Project /> */}
+          <Feedbacks />
+          <div className='relative z-2'>
+            <Contact />
+            <StarsCanvas />
+          </div>
+          <Footer />
+        </div>
+      </div>
     </BrowserRouter>
   );
 };
