@@ -10,11 +10,11 @@ import About from './About';
 import Tech from './Tech';
 import Experience from './Experience';
 import Project from './Project';
-import Feedbacks from './Feedbacks';
 import Contact from './Contact';
 import CanvasLoader from './Loader';
 import Footer from './Footer';
 import WeeklyExercise from './WeeklyExercise';
+import SnakeGitCommit from './SnakeGitCommit';
 export {
   Hero,
   Navbar,
@@ -22,7 +22,7 @@ export {
   Tech,
   Experience,
   Project,
-  Feedbacks,
+  SnakeGitCommit,
   Contact,
   CanvasLoader,
   EarthCanvas,

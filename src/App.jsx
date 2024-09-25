@@ -5,14 +5,14 @@ import {
   About,
   Contact,
   Experience,
-  Feedbacks,
   Hero,
   Navbar,
   Tech,
   Project,
   StarsCanvas,
   Footer,
-  WeeklyExercise
+  WeeklyExercise,
+  SnakeGitCommit
 } from './components';
 import Particle from './components/Particle';
 import ScrollProgressBar from '@components/ScrollProgressBar';
@@ -35,17 +35,9 @@ const App = () => {
     };
   }, []);
 
-  const [isMobile, setIsMobile] = useState(false);
-  useEffect(() => {
-    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
-    if (/android/i.test(userAgent) || /iPad|iPhone|iPod/.test(userAgent)) {
-      setIsMobile(true);
-    }
-  }, []);
-
   return (
     <BrowserRouter>
-      <div className='fixed z-999 flex h-full w-full items-center justify-center md:hidden bg-black-200'>
+      <div className='fixed z-999 flex h-full w-full items-center justify-center bg-black-200 md:hidden'>
         <p className='text-xl font-bold text-purple-700'>
           Unsupported device !!!
         </p>
@@ -65,7 +57,7 @@ const App = () => {
           <Tech />
           <WeeklyExercise />
           {/* <Project /> */}
-          <Feedbacks />
+          <SnakeGitCommit />
           <div className='relative z-2'>
             <Contact />
             <StarsCanvas />

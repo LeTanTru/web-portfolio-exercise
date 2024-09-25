@@ -26,7 +26,8 @@ import {
   hcmute,
   emailList,
   ch05_email,
-  _3dRotation
+  _3dRotation,
+  shoppingCart
 } from '../assets';
 
 export const navLinks = [
@@ -158,33 +159,6 @@ const experiences = [
   }
 ];
 
-const testimonials = [
-  {
-    testimonial:
-      'I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.',
-    name: 'Sara Lee',
-    designation: 'CFO',
-    company: 'Acme Co',
-    image: 'https://randomuser.me/api/portraits/women/4.jpg'
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: 'Chris Brown',
-    designation: 'COO',
-    company: 'DEF Corp',
-    image: 'https://randomuser.me/api/portraits/men/5.jpg'
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: 'Lisa Wang',
-    designation: 'CTO',
-    company: '456 Enterprises',
-    image: 'https://randomuser.me/api/portraits/women/6.jpg'
-  }
-];
-
 const weeklyExercises = [
   {
     name: 'Email List',
@@ -205,7 +179,7 @@ const weeklyExercises = [
     ],
     image: emailList,
     source_code_link: 'https://github.com/LeTanTru/Email',
-    link: 'https://two2110447javawebdeploy.onrender.com/Email/index.jsp'
+    link: 'https://letantru.onrender.com/Email/index.jsp'
   },
   {
     name: 'Murach Survey',
@@ -227,7 +201,7 @@ const weeklyExercises = [
     ],
     image: survey,
     source_code_link: 'https://github.com/LeTanTru/MurachServey',
-    link: 'https://two2110447javawebdeploy.onrender.com/Survey/views/index.html'
+    link: 'https://letantru.onrender.com/Survey/views/index.html'
   },
   {
     name: 'ch05_ex2_email',
@@ -249,7 +223,28 @@ const weeklyExercises = [
     ],
     image: ch05_email,
     source_code_link: 'https://github.com/',
-    link: 'https://two2110447javawebdeploy.onrender.com/ch05_ex2_email/index.jsp'
+    link: 'https://letantru.onrender.com/ch05_ex2_email/index.jsp'
+  },
+  {
+    name: 'Shopping Cart',
+    description: 'Basic Shopping Cart with sessiong and cookie.',
+    tags: [
+      {
+        icon: java,
+        link: 'https://www.java.com/en/'
+      },
+      {
+        icon: jsp,
+        link: 'https://www.oracle.com/java/technologies/javaserver-white-paper.html'
+      },
+      {
+        icon: servlet,
+        link: 'https://tomcat.apache.org/tomcat-5.5-doc/servletapi/index.html'
+      }
+    ],
+    image: shoppingCart,
+    source_code_link: 'https://github.com/LeTanTru/ShoppingCart',
+    link: 'https://letantru.onrender.com/ShoppingCart/home'
   }
 ];
 
@@ -276,23 +271,28 @@ const projects = [
 const socials = [
   {
     name: 'facebook',
-    icon: '/facebook-2.svg'
+    icon: '/facebook-2.svg',
+    link: 'https://www.facebook.com/dopaminee1311'
   },
   {
     name: 'instagram',
-    icon: '/instagram.svg'
+    icon: '/instagram.svg',
+    link: ''
   },
   {
     name: 'github',
-    icon: '/github.svg'
+    icon: '/github.svg',
+    link: 'https://github.com/LeTanTru'
   },
   {
     name: 'twitter',
-    icon: '/twitter.svg'
+    icon: '/twitter.svg',
+    link: ''
   },
   {
     name: 'linkedin',
-    icon: '/linkedin.svg'
+    icon: '/linkedin.svg',
+    link: ''
   }
 ];
 
@@ -307,7 +307,6 @@ export {
   abouts,
   technologies,
   experiences,
-  testimonials,
   weeklyExercises,
   socials,
   projects,

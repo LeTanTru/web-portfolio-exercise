@@ -350,3 +350,13 @@
     transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
   }
 }
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.animate {
+  animation: animate 2s infinite ease-in-out alternate;
+}
