@@ -26,7 +26,7 @@ const Astronaut = () => {
           <img
             src={moon}
             alt='moon'
-            className='absolute inset-0 m-auto h-[300px] w-[300px] animate object-contain md:h-[600px] md:w-[800px]'
+            className='absolute inset-0 m-auto h-[300px] w-[300px] animate object-contain md:h-[400px] md:w-[600px]'
           />
         </div>
       </div>

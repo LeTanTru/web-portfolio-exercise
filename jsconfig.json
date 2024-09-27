@@ -13,7 +13,8 @@
       ],
       "@fortawesome/free-solid-svg-icons": [
         "node_modules/@fortawesome/free-solid-svg-icons/index"
-      ]
+      ],
+      "@assets/*": ["src/assets/*"] 
     }
   }
 }

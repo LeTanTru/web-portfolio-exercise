@@ -4,8 +4,9 @@ import { styles } from '../styles';
 import { SectionWrapper } from '../hoc/index';
 import { projects } from '../constants/index';
 import { Tilt } from 'react-tilt';
-import { github } from '../assets/index';
 import WaveText from './WaveText';
+import { Link } from 'react-router-dom';
+import { github } from '../assets/index';
 
 const ProjectCard = ({
   index,
@@ -26,7 +27,7 @@ const ProjectCard = ({
           <img
             src={image}
             alt={name}
-            className='h-full w-full rounded-2xl object-contain'
+            className='h-full w-full rounded-2xl object-cover'
           />
           <div className='card-img_hover absolute inset-0 m-3 flex justify-end'>
             <div
@@ -49,22 +50,28 @@ const ProjectCard = ({
             {description}
           </p>
         </div>
-        <div className='mt-4 flex items-start justify-between'>
-          <div className='flex flex-wrap gap-2'>
-            {tags.map((tag) => (
-              <p key={tag.name} className={`text-[14px] ${tag.color}`}>
-                #{tag.name}
-              </p>
+        <div className='mt-4 flex items-center justify-between'>
+          <div className='flex flex-wrap'>
+            {tags.map((tag, index) => (
+              <div
+                key={tag.icon}
+                className='flex h-8 w-8 items-center justify-center rounded-full border border-white/[0.2] bg-black lg:h-10 lg:w-10'
+                style={{ transform: `translateX(-${index * 10}px)` }}
+              >
+                <Link to={tag.link}>
+                  <img src={tag.icon} className='p-[6px]' />
+                </Link>
+              </div>
             ))}
           </div>
           <div className='flex'>
-            <a
-              href={link}
+            <Link
+              to={link}
               className='flex text-sm text-purple-400'
               target='_blank'
             >
               Live demo
-            </a>
+            </Link>
             <img src='/telegram.svg' className='ml-2' />
           </div>
         </div>
@@ -109,4 +116,4 @@ const Project = () => {
     </>
   );
 };
-export default SectionWrapper(Project, 'projects');
+export default SectionWrapper(Project, 'project');

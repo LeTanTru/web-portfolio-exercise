@@ -1,33 +1,36 @@
 import {
-  mobile,
+  _3dRotation,
   backend,
+  ch05_email,
   creator,
-  web,
-  javascript,
-  typescript,
-  html,
   css,
+  docker,
+  emailList,
+  figma,
+  git,
+  hcmute,
+  highSchool,
+  html,
+  java,
+  javascript,
+  jsp,
+  lovetravel,
+  mobile,
+  mongodb,
+  nodejs,
   reactjs,
   redux,
-  tailwind,
-  nodejs,
-  mongodb,
-  git,
-  figma,
-  docker,
-  threejs,
-  vite,
-  threejsWhiteFill,
-  java,
-  jsp,
   servlet,
+  shoppingCart,
   survey,
-  highSchool,
-  hcmute,
-  emailList,
-  ch05_email,
-  _3dRotation,
-  shoppingCart
+  tailwind,
+  threejs,
+  threejsWhiteFill,
+  typescript,
+  vite,
+  web,
+  jquery,
+  aos
 } from '../assets';
 
 export const navLinks = [
@@ -254,17 +257,47 @@ const projects = [
     description: 'Infinite 3D rotation with HTML, CSS.',
     tags: [
       {
-        name: 'HTML',
-        color: 'blue-text-gradient'
+        icon: html,
+        link: 'https://developer.mozilla.org/en-US/docs/Web/HTML'
       },
       {
-        name: 'CSS',
-        color: 'green-text-gradient'
+        icon: css,
+        link: 'https://developer.mozilla.org/en-US/docs/Web/CSS'
       }
     ],
     image: _3dRotation,
     source_code_link: 'https://github.com/LeTanTru/3d-rotation-html-css',
-    link: 'https://3d-rotation-html-css.vercel.app/'
+    link: 'https://letantru3d-rotation.vercel.app/'
+  },
+  {
+    name: 'Love Travel UI Clone',
+    description:
+      'Love Travel UI Clone with HTML, CSS, JavaScript, Jquery, Animate On Scroll (AOS)',
+    tags: [
+      {
+        icon: html,
+        link: 'https://developer.mozilla.org/en-US/docs/Web/HTML'
+      },
+      {
+        icon: css,
+        link: 'https://developer.mozilla.org/en-US/docs/Web/CSS'
+      },
+      {
+        icon: javascript,
+        link: 'https://developer.mozilla.org/en-US/docs/Web/CSS'
+      },
+      {
+        icon: jquery,
+        link: 'https://jquery.com/'
+      },
+      {
+        icon: aos,
+        link: 'https://michalsnik.github.io/aos/'
+      }
+    ],
+    image: lovetravel,
+    source_code_link: 'https://github.com/LeTanTru/Love-Travel-Clone-UI',
+    link: 'https://letantrulovetravel.vercel.app/'
   }
 ];
 

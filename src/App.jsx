@@ -56,7 +56,7 @@ const App = () => {
           <Experience />
           <Tech />
           <WeeklyExercise />
-          {/* <Project /> */}
+          <Project />
           <SnakeGitCommit />
           <div className='relative z-2'>
             <Contact />

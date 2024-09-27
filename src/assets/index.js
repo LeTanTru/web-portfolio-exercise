@@ -26,6 +26,8 @@ import threejs from './tech/threejs.svg';
 import threejsWhiteFill from './tech/threejs-white-fill.svg';
 import typescript from './tech/typescript.png';
 import vite from './tech/vite.svg';
+import jquery from './tech/jquery.png';
+import aos from './tech/aos.png'
 
 import _3dRotation from './3d-rotation.png';
 import ch05_email from './ch05_email.png';
@@ -35,6 +37,7 @@ import hcmute from './hcmute.png';
 import highSchool from './an-nghia-high-school.png';
 import shoppingCart from './shoppingcart.png';
 import survey from './survey.png';
+import lovetravel from './lovetravel.png';
 
 export {
   _3dRotation,
@@ -54,8 +57,10 @@ export {
   html,
   java,
   javascript,
+  jquery,
   jsp,
   logo,
+  lovetravel,
   menu,
   mobile,
   mongodb,
@@ -72,4 +77,5 @@ export {
   typescript,
   vite,
   web,
+  aos
 };
