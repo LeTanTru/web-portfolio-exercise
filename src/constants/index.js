@@ -230,7 +230,7 @@ const weeklyExercises = [
   },
   {
     name: 'Shopping Cart',
-    description: 'Basic Shopping Cart with sessiong and cookie.',
+    description: 'Basic Shopping Cart with session and cookie.',
     tags: [
       {
         icon: java,
