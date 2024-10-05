@@ -30,7 +30,9 @@ import {
   vite,
   web,
   jquery,
-  aos
+  aos,
+  sqlgateway,
+  mysql
 } from '../assets';
 
 export const navLinks = [
@@ -248,6 +250,31 @@ const weeklyExercises = [
     image: shoppingCart,
     source_code_link: 'https://github.com/LeTanTru/ShoppingCart',
     link: 'https://letantru.onrender.com/ShoppingCart/home'
+  },
+  {
+    name: 'SQL Gateway',
+    description: 'Interact with database by using JDBC and MySQL.',
+    tags: [
+      {
+        icon: java,
+        link: 'https://www.java.com/en/'
+      },
+      {
+        icon: jsp,
+        link: 'https://www.oracle.com/java/technologies/javaserver-white-paper.html'
+      },
+      {
+        icon: servlet,
+        link: 'https://tomcat.apache.org/tomcat-5.5-doc/servletapi/index.html'
+      },
+      {
+        icon: mysql,
+        link: 'https://www.mysql.com/'
+      }
+    ],
+    image: sqlgateway,
+    source_code_link: 'https://github.com/LeTanTru/SqlGateway',
+    link: 'https://letantru.onrender.com/SqlGateway/home'
   }
 ];
 

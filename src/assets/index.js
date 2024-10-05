@@ -27,7 +27,8 @@ import threejsWhiteFill from './tech/threejs-white-fill.svg';
 import typescript from './tech/typescript.png';
 import vite from './tech/vite.svg';
 import jquery from './tech/jquery.png';
-import aos from './tech/aos.png'
+import aos from './tech/aos.png';
+import mysql from './tech/mysql.png';
 
 import _3dRotation from './3d-rotation.png';
 import ch05_email from './ch05_email.png';
@@ -35,12 +36,15 @@ import emailList from './emailList.png';
 import emailListUpdate from './emailListUpdate.png';
 import hcmute from './hcmute.png';
 import highSchool from './an-nghia-high-school.png';
-import shoppingCart from './shoppingcart.png';
-import survey from './survey.png';
 import lovetravel from './lovetravel.png';
+import shoppingCart from './shoppingcart.png';
+import sqlgateway from './sql-gateway.png';
+import survey from './survey.png';
 
 export {
   _3dRotation,
+  mysql,
+  sqlgateway,
   backend,
   ch05_email,
   close,
