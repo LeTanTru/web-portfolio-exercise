@@ -32,7 +32,7 @@ import mysql from './tech/mysql.png';
 
 import _3dRotation from './3d-rotation.png';
 import ch05_email from './ch05_email.png';
-import emailList from './emailList.png';
+import emailList from './emailListConnectionPool.png';
 import emailListUpdate from './emailListUpdate.png';
 import hcmute from './hcmute.png';
 import highSchool from './an-nghia-high-school.png';

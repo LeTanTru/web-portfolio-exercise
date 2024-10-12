@@ -167,7 +167,8 @@ const experiences = [
 const weeklyExercises = [
   {
     name: 'Email List',
-    description: 'Basic website with Java JSP Servlet with MVC model.',
+    description:
+      'Basic website with Java JSP Servlet with MVC model. Updated with Connection Pool.',
     tags: [
       {
         icon: java,
