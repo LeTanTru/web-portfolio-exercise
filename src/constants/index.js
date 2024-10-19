@@ -276,7 +276,28 @@ const weeklyExercises = [
     image: sqlgateway,
     source_code_link: 'https://github.com/LeTanTru/SqlGateway',
     link: 'https://letantru.onrender.com/SqlGateway/home'
-  }
+  },{
+    name: 'Email List JPA',
+    description:
+      'Email List JPA + Connection Pool by Hikari.',
+    tags: [
+      {
+        icon: java,
+        link: 'https://www.java.com/en/'
+      },
+      {
+        icon: jsp,
+        link: 'https://www.oracle.com/java/technologies/javaserver-white-paper.html'
+      },
+      {
+        icon: servlet,
+        link: 'https://tomcat.apache.org/tomcat-5.5-doc/servletapi/index.html'
+      }
+    ],
+    image: emailList,
+    source_code_link: 'https://github.com/LeTanTru/EmailJPA',
+    link: 'https://letantru.onrender.com/EmailJPA/index.jsp'
+  },
 ];
 
 const projects = [
