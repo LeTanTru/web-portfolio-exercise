@@ -32,7 +32,10 @@ import {
   jquery,
   aos,
   sqlgateway,
-  mysql
+  mysql,
+  sendEmail,
+  paging,
+  ajax
 } from '../assets';
 
 export const navLinks = [
@@ -309,6 +312,56 @@ const weeklyExercises = [
     image: emailList,
     source_code_link: 'https://github.com/LeTanTru/EmailJPA',
     link: 'https://letantru.onrender.com/EmailJPA/index.jsp'
+  },
+  {
+    name: 'Send email with Java Mail API.',
+    description: 'Send email with Java Mail API.',
+    tags: [
+      {
+        icon: java,
+        link: 'https://www.java.com/en/'
+      },
+      {
+        icon: jsp,
+        link: 'https://www.oracle.com/java/technologies/javaserver-white-paper.html'
+      },
+      {
+        icon: servlet,
+        link: 'https://tomcat.apache.org/tomcat-5.5-doc/servletapi/index.html'
+      }
+    ],
+    image: sendEmail,
+    source_code_link: 'https://github.com/LeTanTru/SendEmail',
+    link: 'https://letantru.onrender.com/SendEmail/'
+  },
+  {
+    name: 'Paging with JDBC.',
+    description: 'Basic paging app with JDBC and Ajax.',
+    tags: [
+      {
+        icon: java,
+        link: 'https://www.java.com/en/'
+      },
+      {
+        icon: jsp,
+        link: 'https://www.oracle.com/java/technologies/javaserver-white-paper.html'
+      },
+      {
+        icon: servlet,
+        link: 'https://tomcat.apache.org/tomcat-5.5-doc/servletapi/index.html'
+      },
+      {
+        icon: mysql,
+        link: 'https://www.mysql.com/'
+      },
+      {
+        icon: ajax,
+        link: 'https://api.jquery.com/jQuery.ajax/'
+      }
+    ],
+    image: paging,
+    source_code_link: 'https://github.com/LeTanTru/PagingServlet',
+    link: 'https://letantru.onrender.com/Paging/'
   }
 ];
 

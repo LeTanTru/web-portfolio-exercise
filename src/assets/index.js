@@ -29,6 +29,7 @@ import vite from './tech/vite.svg';
 import jquery from './tech/jquery.png';
 import aos from './tech/aos.png';
 import mysql from './tech/mysql.png';
+import ajax from './tech/ajax.png';
 
 import _3dRotation from './3d-rotation.png';
 import ch05_email from './ch05_email.png';
@@ -40,8 +41,13 @@ import lovetravel from './lovetravel.png';
 import shoppingCart from './shoppingcart.png';
 import sqlgateway from './sql-gateway.png';
 import survey from './survey.png';
+import sendEmail from './send-email.png';
+import paging from './paging.png';
 
 export {
+  paging,
+  ajax,
+  sendEmail,
   _3dRotation,
   mysql,
   sqlgateway,
