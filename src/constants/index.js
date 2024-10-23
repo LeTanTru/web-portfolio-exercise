@@ -181,6 +181,10 @@ const weeklyExercises = [
       {
         icon: servlet,
         link: 'https://tomcat.apache.org/tomcat-5.5-doc/servletapi/index.html'
+      },
+      {
+        icon: mysql,
+        link: 'https://www.mysql.com/'
       }
     ],
     image: emailList,
@@ -246,6 +250,10 @@ const weeklyExercises = [
       {
         icon: servlet,
         link: 'https://tomcat.apache.org/tomcat-5.5-doc/servletapi/index.html'
+      },
+      {
+        icon: mysql,
+        link: 'https://www.mysql.com/'
       }
     ],
     image: shoppingCart,
@@ -276,10 +284,10 @@ const weeklyExercises = [
     image: sqlgateway,
     source_code_link: 'https://github.com/LeTanTru/SqlGateway',
     link: 'https://letantru.onrender.com/SqlGateway/home'
-  },{
+  },
+  {
     name: 'Email List JPA',
-    description:
-      'Email List JPA + Connection Pool by Hikari.',
+    description: 'Email List JPA + Connection Pool by Hikari.',
     tags: [
       {
         icon: java,
@@ -292,12 +300,16 @@ const weeklyExercises = [
       {
         icon: servlet,
         link: 'https://tomcat.apache.org/tomcat-5.5-doc/servletapi/index.html'
+      },
+      {
+        icon: mysql,
+        link: 'https://www.mysql.com/'
       }
     ],
     image: emailList,
     source_code_link: 'https://github.com/LeTanTru/EmailJPA',
     link: 'https://letantru.onrender.com/EmailJPA/index.jsp'
-  },
+  }
 ];
 
 const projects = [
