@@ -92,10 +92,10 @@ const Project = () => {
           variants={fadeIn('', '', 0.1, 1)}
           className='mt-3 text-[18px] leading-[1.5] text-secondary'
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+          {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
           dignissimos tenetur dolore et officia, corrupti fuga enim, asperiores
           mollitia, ullam sapiente pariatur laudantium molestias veniam nam
-          incidunt eaque quia quidem?
+          incidunt eaque quia quidem? */}
         </motion.p>
         <div className='mt-20 flex flex-wrap gap-7'>
           {projects?.length > 0 ? (

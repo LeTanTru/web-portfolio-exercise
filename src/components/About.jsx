@@ -38,10 +38,10 @@ const About = () => {
         variant={fadeIn('', '', 0.1, 1)}
         className='mt-4 text-justify text-[18px] leading-[30px] text-secondary'
       >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, aut
+        {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, aut
         nam, hic laudantium nostrum deleniti libero molestias illum placeat
         dolorem voluptatum laboriosam corporis nulla sint, nemo labore ea minus
-        alias.
+        alias. */}
       </motion.p>
 
       <div className='mt-20 grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
