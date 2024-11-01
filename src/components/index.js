@@ -15,7 +15,10 @@ import CanvasLoader from './Loader';
 import Footer from './Footer';
 import WeeklyExercise from './WeeklyExercise';
 import SnakeGitCommit from './SnakeGitCommit';
+import Earth from './Earth';
+
 export {
+  Earth,
   Hero,
   Navbar,
   About,

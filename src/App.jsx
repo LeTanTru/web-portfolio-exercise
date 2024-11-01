@@ -12,7 +12,8 @@ import {
   StarsCanvas,
   Footer,
   WeeklyExercise,
-  SnakeGitCommit
+  SnakeGitCommit,
+  Earth
 } from './components';
 import Particle from './components/Particle';
 import ScrollProgressBar from '@components/ScrollProgressBar';
@@ -59,7 +60,7 @@ const App = () => {
           <Project />
           <SnakeGitCommit />
           <div className='relative z-2'>
-            <Contact />
+            <Earth />
             <StarsCanvas />
           </div>
           <Footer />

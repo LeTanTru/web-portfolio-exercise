@@ -5,6 +5,7 @@ import { SectionWrapper } from '../hoc/index';
 import { weeklyExercises } from '../constants/index';
 import { Tilt } from 'react-tilt';
 import { github } from '../assets/index';
+import WaveText from './WaveText';
 
 const ExerciseCard = ({
   index,
@@ -19,13 +20,13 @@ const ExerciseCard = ({
     <motion.div variants={fadeIn('up', 'spring', index * 0.5, 0.75)}>
       <Tilt
         options={{ max: 45, scale: 1, speed: 450 }}
-        className='mx-auto w-full rounded-2xl bg-tertiary p-5 sm:w-[360px]'
+        className='mx-auto flex h-[100%] w-full flex-col rounded-2xl bg-tertiary p-5 sm:w-[360px]'
       >
-        <div className='relative h-[250px] w-full'>
+        <div className='relative w-full flex-1 overflow-hidden rounded'>
           <img
             src={image}
             alt={name}
-            className='h-full w-full rounded-2xl object-contain'
+            className='h-full w-full object-contain'
           />
           <div className='card-img_hover absolute inset-0 m-3 flex justify-end'>
             <div
@@ -90,8 +91,12 @@ const Exercise = () => {
           variants={fadeIn('', '', 0.1, 1)}
           className='mt-3 max-w-3xl text-[18px] leading-[1.5] text-secondary'
         >
-          <p className='text-center md:text-left'>
-            This section shows live demo and source code. Click&nbsp;
+          <p className='text-justify'>
+            This section shows weekly
+            <p className='inline font-bold'>
+              <WaveText text=' WEB PROGRAMING '></WaveText>
+            </p>
+            weekly exercise and source code. Click&nbsp;
             <span className='inline-flex text-[18px] text-purple-400'>
               Live Demo
               <img src='/telegram.svg' className='ml-2' />
@@ -103,9 +108,13 @@ const Exercise = () => {
             &nbsp; on the top right to get source code.
           </p>
         </motion.p>
-        <div className='lg: mx-auto mt-20 grid grid-cols-1 gap-x-5 gap-y-5 lg:grid-cols-2 xl:grid-cols-3'>
-          {weeklyExercises.map((project, index) => (
-            <ExerciseCard key={`project-${index}`} {...project} index={index} />
+        <div className='mt-20 grid grid-cols-1 gap-x-5 gap-y-5 lg:mx-auto lg:grid-cols-2 xl:grid-cols-3'>
+          {weeklyExercises.map((exercise, index) => (
+            <ExerciseCard
+              key={`exercise-${index}`}
+              {...exercise}
+              index={index}
+            />
           ))}
         </div>
       </div>
