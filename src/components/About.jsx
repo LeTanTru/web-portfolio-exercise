@@ -24,7 +24,7 @@ const AboutCard = () => {
         className='about relative mx-auto h-full w-full overflow-hidden rounded-xl shadow-card'
       >
         <div className='relative left-[5px] top-[5px] z-[999] flex h-[calc(100%_-_10px)] w-[calc(100%_-_10px)] flex-col items-center justify-evenly'>
-          <div className='animate-gradient-xy absolute inset-0 h-[calc(100%_-_10px)] rounded-xl bg-gradient-to-r from-[#050817] to-blue-500 opacity-30'></div>
+          <div className='animate-gradient-xy absolute inset-0 h-[calc(100%_-_10px)] rounded-xl bg-gradient-to-r opacity-30'></div>
           <div className='relative h-full w-full p-6'>
             {abouts.map((about) => (
               <InformationItem key={about.icon} {...about} />

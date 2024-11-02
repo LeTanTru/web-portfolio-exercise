@@ -44,7 +44,7 @@
 }
 
 .green-pink-gradient {
-  background: '#00cea8';
+  background: #00cea8;
   background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
   background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
 }
@@ -372,6 +372,7 @@
 }
 
 .animate-gradient-xy {
+  background: linear-gradient(to right, #673ab7, #2980b9, #5614b0, #050817);
   animation: gradient-xy 4s ease-in-out infinite;
   background-size: 200% 200%;
 }
