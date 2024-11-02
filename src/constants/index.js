@@ -55,10 +55,10 @@ export const navLinks = [
     id: 'project',
     title: 'Projects'
   },
-  {
-    id: 'contact',
-    title: 'Contact'
-  }
+  // {
+  //   id: 'contact',
+  //   title: 'Contact'
+  // }
 ];
 
 const abouts = [
