@@ -5,10 +5,11 @@ import { styles } from '../styles';
 import { navLinks } from '../constants';
 import { logo, menu, close } from '../assets';
 import WaveText from './WaveText';
+import { Link as ScrollLink } from 'react-scroll';
 
 const Navbar = () => {
   const [active, setActive] = useState('');
-  console.log(active);
+
   const [toggle, setToggle] = useState(false);
   return (
     <>
@@ -36,14 +37,24 @@ const Navbar = () => {
               />
             </p>
           </Link>
-          <ul className='ml-auto hidden list-none gap-10 md:ml-5 lg:flex md:gap-5 lg:flex'>
+          <ul className='ml-auto hidden list-none gap-10 md:ml-5 md:gap-5 lg:flex'>
             {navLinks.map((navLink) => (
               <li
                 key={navLink.id}
                 className={`${navLink.title === active ? 'text-white' : 'text-secondary'} cursor-pointer text-[18px] font-medium transition-all hover:-translate-y-1 hover:text-white`}
                 onClick={() => setActive(navLink.title)}
               >
-                <a href={`#${navLink.id}`}>{navLink.title}</a>
+                {/* <a href={`#${navLink.id}`}>{navLink.title}</a>
+                 */}
+                <ScrollLink
+                  to={`${navLink.id}`}
+                  smooth={true}
+                  duration={0}
+                  spy={true}
+                  offset={-window.innerHeight / 10}
+                >
+                  {navLink.title}
+                </ScrollLink>
               </li>
             ))}
           </ul>

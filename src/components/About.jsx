@@ -1,55 +1,49 @@
-import { Tilt } from 'react-tilt';
 import { motion } from 'framer-motion';
 import { styles } from '../styles';
-import { abouts } from '../constants/index';
 import { fadeIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc/index';
+import { abouts } from '@constants';
+import { Element } from 'react-scroll';
 
-const ServiceCard = ({ index, title, icon }) => {
+const InformationItem = ({ icon, value }) => {
   return (
-    <Tilt className='mx-auto w-full xs:w-[250px]'>
+    <div className='mb-2 flex items-center gap-x-2'>
+      <div className='h-[25px] w-[25px]'>
+        <img src={icon} className='h-full w-full object-cover' />
+      </div>
+      <p className='text-xl font-bold text-white/80'>{value}</p>
+    </div>
+  );
+};
+
+const AboutCard = () => {
+  return (
+    <div className='relative w-full overflow-hidden rounded-xl bg-white/10 backdrop-blur-lg'>
       <motion.div
-        variant={fadeIn('right', 'spring', 0.5 * index, 0.75)}
-        className='green-pink-gradient mx-auto w-full rounded-[20px] p-[2px] shadow-card'
+        variant={fadeIn('right', 'spring', 0.5, 0.75)}
+        className='about relative mx-auto h-full w-full overflow-hidden rounded-xl shadow-card'
       >
-        <div
-          options={{ max: 45, scale: 1, speed: 450 }}
-          className='flex min-h-[280px] flex-col items-center justify-evenly rounded-[20px] bg-tertiary px-12 py-5'
-        >
-          <img src={icon} alt={title} className='h-16 w-16 object-contain' />
-          <h3 className='text-center text-[20px] font-bold text-white'>
-            {title}
-          </h3>
+        <div className='relative left-[5px] top-[5px] z-[999] flex h-[calc(100%_-_10px)] w-[calc(100%_-_10px)] flex-col items-center justify-evenly'>
+          <div className='animate-gradient-xy absolute inset-0 h-[calc(100%_-_10px)] rounded-xl bg-gradient-to-r from-[#050817] to-blue-500 opacity-30'></div>
+          <div className='relative h-full w-full p-6'>
+            {abouts.map((about) => (
+              <InformationItem key={about.icon} {...about} />
+            ))}
+          </div>
         </div>
       </motion.div>
-    </Tilt>
+    </div>
   );
 };
 
 const About = () => {
   return (
-    <div className='relative z-1'>
+    <Element name='about' className='relative z-1'>
       <motion.div variant={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview</h2>
+        <h2 className={styles.sectionHeadText}>About me</h2>
       </motion.div>
-
-      <motion.p
-        variant={fadeIn('', '', 0.1, 1)}
-        className='mt-4 text-justify text-[18px] leading-[30px] text-secondary'
-      >
-        {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, aut
-        nam, hic laudantium nostrum deleniti libero molestias illum placeat
-        dolorem voluptatum laboriosam corporis nulla sint, nemo labore ea minus
-        alias. */}
-      </motion.p>
-
-      <div className='mt-20 grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
-        {abouts.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
-        ))}
-      </div>
-    </div>
+      <AboutCard />
+    </Element>
   );
 };
 export default SectionWrapper(About, 'about');
