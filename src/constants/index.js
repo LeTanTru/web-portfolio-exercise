@@ -2,7 +2,6 @@ import {
   _3dRotation,
   backend,
   ch05_email,
-  creator,
   css,
   docker,
   emailList,
@@ -35,13 +34,22 @@ import {
   mysql,
   sendEmail,
   paging,
-  ajax
+  ajax,
+  user,
+  english,
+  dob,
+  email,
+  phone
 } from '../assets';
 
-export const navLinks = [
+const navLinks = [
   {
     id: 'about',
     title: 'About'
+  },
+  {
+    id: 'skill',
+    title: 'Skills'
   },
   {
     id: 'work',
@@ -54,26 +62,55 @@ export const navLinks = [
   {
     id: 'project',
     title: 'Projects'
-  },
-  // {
-  //   id: 'contact',
-  //   title: 'Contact'
-  // }
+  }
 ];
 
 const abouts = [
   {
-    title: 'Frontend Developer',
-    icon: web
+    icon: user,
+    value: 'Lê Tấn Trụ (dopamine)'
   },
   {
-    title: 'React Native Developer',
-    icon: mobile
+    icon: dob,
+    value: '13/11/2004'
   },
+  {
+    icon: phone,
+    value: '0342946956'
+  },
+  {
+    icon: email,
+    value: 'letantru@gmail.com'
+  },
+  {
+    icon: english,
+    value: 'TOEIC 795'
+  }
+];
+
+const skills = [
+  {
+    title: 'Frontend Developer',
+    icon: web,
+    fromColor: 'from-[#D16BA5]',
+    viaColor: 'via-[#86A8E7]',
+    toColor: 'to-[#5FFBF1]'
+  },
+
   {
     title: 'Backend Developer',
-    icon: backend
+    icon: backend,
+    fromColor: 'from-[#879AF2]',
+    viaColor: 'via-[#8233C5]',
+    toColor: 'to-[#E963FD]'
   }
+  // {
+  //   title: 'React Native Developer',
+  //   icon: mobile,
+  //   fromColor: 'from-[#42E695]',
+  //   viaColor: 'via-[#D3208B]',
+  //   toColor: 'to-[#EA6060]'
+  // }
 ];
 
 const technologies = [
@@ -448,6 +485,8 @@ const powers = [
 
 export {
   abouts,
+  navLinks,
+  skills,
   technologies,
   experiences,
   weeklyExercises,

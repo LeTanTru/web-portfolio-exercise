@@ -1,10 +1,16 @@
 import { technologies } from '../constants/index';
 import { SectionWrapper } from '../hoc/index';
+import { styles } from '../styles';
+import { textVariant } from '../utils/motion';
 import BallCanvas from './canvas/Ball';
+import { motion } from 'framer-motion';
 
 const Tech = () => {
   return (
     <div className='flex flex-row flex-wrap justify-center gap-[48px]'>
+      <motion.div variant={textVariant()} className='block w-full text-center'>
+        <h2 className={`${styles.sectionHeadText}`}>Tech stacks</h2>
+      </motion.div>
       {technologies.map((tech) => {
         return (
           <div key={tech.name} className='group relative h-28 w-28'>

@@ -43,8 +43,18 @@ import sqlgateway from './sql-gateway.png';
 import survey from './survey.png';
 import sendEmail from './send-email.png';
 import paging from './paging.png';
+import user from './user.svg';
+import dob from './dateofbirth.svg';
+import phone from './phone.svg';
+import email from './email.svg';
+import english from './english.svg';
 
 export {
+  english,
+  email,
+  phone,
+  dob,
+  user,
   paging,
   ajax,
   sendEmail,

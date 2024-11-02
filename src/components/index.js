@@ -6,7 +6,7 @@ import {
 } from './canvas';
 import Hero from './Hero';
 import Navbar from './Navbar';
-import About from './About';
+import Skills from './Skills';
 import Tech from './Tech';
 import Experience from './Experience';
 import Project from './Project';
@@ -16,12 +16,14 @@ import Footer from './Footer';
 import WeeklyExercise from './WeeklyExercise';
 import SnakeGitCommit from './SnakeGitCommit';
 import Earth from './Earth';
+import About from './About';
 
 export {
+  About,
   Earth,
   Hero,
   Navbar,
-  About,
+  Skills,
   Tech,
   Experience,
   Project,

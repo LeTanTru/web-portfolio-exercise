@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -8,7 +8,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Be Vietnam Pro', sans-serif;
   scroll-behavior: smooth;
   color-scheme: dark;
 }
@@ -325,12 +325,12 @@
 
 .loader-item:nth-child(2) {
   --animation-name: rotate2;
-  animation-delay: 0.025s
+  animation-delay: 0.025s;
 }
 
 .loader-item:nth-child(3) {
   --animation-name: rotate3;
-  animation-delay: 0.05s
+  animation-delay: 0.05s;
 }
 
 @keyframes rotate1 {
@@ -359,4 +359,58 @@
 
 .animate {
   animation: animate 2s infinite ease-in-out alternate;
+}
+
+@keyframes gradient-xy {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.animate-gradient-xy {
+  animation: gradient-xy 4s ease-in-out infinite;
+  background-size: 200% 200%;
+}
+
+.about::before {
+  content: '';
+  position: absolute;
+  width: 1200px;
+  height: 1200px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation: spinner 4s ease-in-out infinite;
+  background: conic-gradient(
+      from 0deg at 50% 51.35%,
+      rgba(185, 215, 243, 0) 0deg,
+      rgba(185, 215, 243, 0) 289.4deg,
+      #ffb86c 318.05deg,
+      #ff65f2 1turn
+    ),
+    conic-gradient(
+      from 180deg at 50% 51.35%,
+      rgba(185, 215, 243, 0) 0deg,
+      rgba(185, 215, 243, 0) 287.46deg,
+      #20e3b2 325.02deg,
+      #00aefd 1turn
+    );
+}
+
+.about::after {
+  content: '';
+  position: absolute;
+  inset: 5px;
+  background-color: #050817;
+  @apply rounded-xl;
+}
+
+@keyframes spinner {
+  100% {
+    transform: translate(-50%, -50%) rotate(1turn);
+  }
 }
