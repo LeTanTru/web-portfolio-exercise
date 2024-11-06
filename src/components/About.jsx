@@ -4,6 +4,7 @@ import { fadeIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc/index';
 import { abouts } from '@constants';
 import { Element } from 'react-scroll';
+import { avatar } from '../assets/index';
 
 const InformationItem = ({ icon, value }) => {
   return (
@@ -25,10 +26,15 @@ const AboutCard = () => {
       >
         <div className='relative left-[5px] top-[5px] z-[999] flex h-[calc(100%_-_10px)] w-[calc(100%_-_10px)] flex-col items-center justify-evenly'>
           <div className='animate-gradient-xy absolute inset-0 h-[calc(100%_-_10px)] rounded-xl bg-gradient-to-r opacity-30'></div>
-          <div className='relative h-full w-full p-6'>
-            {abouts.map((about) => (
-              <InformationItem key={about.icon} {...about} />
-            ))}
+          <div className='relative z-999 flex items-center'>
+            <div className='h-[200px] w-[300px] overflow-hidden  bg-red-500 rounded-md'>
+              <img src={avatar} alt='' className='h-full w-full object-cover' />
+            </div>
+            <div className='relative h-full w-full p-6'>
+              {abouts.map((about) => (
+                <InformationItem key={about.icon} {...about} />
+              ))}
+            </div>
           </div>
         </div>
       </motion.div>

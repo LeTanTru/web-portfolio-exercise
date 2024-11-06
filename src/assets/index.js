@@ -48,8 +48,10 @@ import dob from './dateofbirth.svg';
 import phone from './phone.svg';
 import email from './email.svg';
 import english from './english.svg';
+import avatar from './avatar.jpg';
 
 export {
+  avatar,
   english,
   email,
   phone,
