@@ -1,39 +1,38 @@
-import {
-  EarthCanvas,
-  BallCanvas,
-  ComputersCanvas,
-  StarsCanvas
-} from './canvas';
-import Hero from './Hero';
-import Navbar from './Navbar';
-import Skills from './Skills';
-import Tech from './Tech';
-import Experience from './Experience';
-import Project from './Project';
-import Contact from './Contact';
-import CanvasLoader from './Loader';
-import Footer from './Footer';
-import WeeklyExercise from './WeeklyExercise';
-import SnakeGitCommit from './SnakeGitCommit';
-import Earth from './Earth';
-import About from './About';
+import React, { Suspense } from 'react';
+
+// Lazy load các components
+const Hero = React.lazy(() => import('./Hero'));
+const Navbar = React.lazy(() => import('./Navbar'));
+const Skills = React.lazy(() => import('./Skills'));
+const Tech = React.lazy(() => import('./Tech'));
+const Experience = React.lazy(() => import('./Experience'));
+const Project = React.lazy(() => import('./Project'));
+const Contact = React.lazy(() => import('./Contact'));
+const CanvasLoader = React.lazy(() => import('./Loader'));
+const Footer = React.lazy(() => import('./Footer'));
+const SnakeGitCommit = React.lazy(() => import('./SnakeGitCommit'));
+const Earth = React.lazy(() => import('./Earth'));
+const About = React.lazy(() => import('./About'));
+const EarthCanvas = React.lazy(() => import('./canvas/Earth'));
+const BallCanvas = React.lazy(() => import('./canvas/Ball'));
+const ComputersCanvas = React.lazy(() => import('./canvas/Computers'));
+const StarsCanvas = React.lazy(() => import('./canvas/Stars'));
 
 export {
-  About,
-  Earth,
   Hero,
   Navbar,
   Skills,
   Tech,
   Experience,
   Project,
-  SnakeGitCommit,
   Contact,
   CanvasLoader,
+  Footer,
+  SnakeGitCommit,
+  Earth,
+  About,
   EarthCanvas,
   BallCanvas,
   ComputersCanvas,
-  StarsCanvas,
-  Footer,
-  WeeklyExercise
+  StarsCanvas
 };

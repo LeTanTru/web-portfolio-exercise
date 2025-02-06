@@ -1,27 +1,20 @@
+import { adminDashboard, framerMotion, reactRouterDom } from '@assets/index';
 import {
   _3dRotation,
   backend,
-  ch05_email,
   css,
   docker,
-  emailList,
   figma,
   git,
   hcmute,
   highSchool,
   html,
-  java,
   javascript,
-  jsp,
   lovetravel,
-  mobile,
   mongodb,
   nodejs,
   reactjs,
   redux,
-  servlet,
-  shoppingCart,
-  survey,
   tailwind,
   threejs,
   threejsWhiteFill,
@@ -30,11 +23,6 @@ import {
   web,
   jquery,
   aos,
-  sqlgateway,
-  mysql,
-  sendEmail,
-  paging,
-  ajax,
   user,
   english,
   dob,
@@ -54,10 +42,6 @@ const navLinks = [
   {
     id: 'work',
     title: 'Work'
-  },
-  {
-    id: 'exercise',
-    title: 'Weekly Exercise'
   },
   {
     id: 'project',
@@ -200,175 +184,6 @@ const experiences = [
   }
 ];
 
-const weeklyExercises = [
-  {
-    name: 'Email List',
-    description:
-      'Basic website with Java JSP Servlet with MVC model. Updated with Connection Pool.',
-    tags: [
-      {
-        icon: java,
-        link: 'https://www.java.com/en/'
-      },
-      {
-        icon: jsp,
-        link: 'https://www.oracle.com/java/technologies/javaserver-white-paper.html'
-      },
-      {
-        icon: servlet,
-        link: 'https://tomcat.apache.org/tomcat-5.5-doc/servletapi/index.html'
-      },
-      {
-        icon: mysql,
-        link: 'https://www.mysql.com/'
-      }
-    ],
-    image: emailList,
-    source_code_link: 'https://github.com/LeTanTru/Email',
-    link: 'https://letantru.onrender.com/Email/index.jsp'
-  },
-  {
-    name: 'Murach Survey',
-    description:
-      'Work with form elements with Java JSP Servlet with MVC Model.',
-    tags: [
-      {
-        icon: java,
-        link: 'https://www.java.com/en/'
-      },
-      {
-        icon: jsp,
-        link: 'https://www.oracle.com/java/technologies/javaserver-white-paper.html'
-      },
-      {
-        icon: servlet,
-        link: 'https://tomcat.apache.org/tomcat-5.5-doc/servletapi/index.html'
-      }
-    ],
-    image: survey,
-    source_code_link: 'https://github.com/LeTanTru/MurachServey',
-    link: 'https://letantru.onrender.com/Survey/views/index.html'
-  },
-  {
-    name: 'ch05_ex2_email',
-    description:
-      'Use annotation @WebServlet to map to /test with doGet and doPost. Call doGet by replacing index.jsp with test in the url. Call doPost when click Join Now button.',
-    tags: [
-      {
-        icon: java,
-        link: 'https://www.java.com/en/'
-      },
-      {
-        icon: jsp,
-        link: 'https://www.oracle.com/java/technologies/javaserver-white-paper.html'
-      },
-      {
-        icon: servlet,
-        link: 'https://tomcat.apache.org/tomcat-5.5-doc/servletapi/index.html'
-      }
-    ],
-    image: ch05_email,
-    source_code_link: 'https://github.com/',
-    link: 'https://letantru.onrender.com/ch05_ex2_email/index.jsp'
-  },
-  {
-    name: 'Shopping Cart',
-    description: 'Basic Shopping Cart with session and cookie.',
-    tags: [
-      {
-        icon: java,
-        link: 'https://www.java.com/en/'
-      },
-      {
-        icon: jsp,
-        link: 'https://www.oracle.com/java/technologies/javaserver-white-paper.html'
-      },
-      {
-        icon: servlet,
-        link: 'https://tomcat.apache.org/tomcat-5.5-doc/servletapi/index.html'
-      },
-      {
-        icon: mysql,
-        link: 'https://www.mysql.com/'
-      }
-    ],
-    image: shoppingCart,
-    source_code_link: 'https://github.com/LeTanTru/ShoppingCart',
-    link: 'https://letantru.onrender.com/ShoppingCart/home'
-  },
-  {
-    name: 'SQL Gateway',
-    description: 'Interact with database by using JDBC and MySQL.',
-    tags: [
-      {
-        icon: java,
-        link: 'https://www.java.com/en/'
-      },
-      {
-        icon: jsp,
-        link: 'https://www.oracle.com/java/technologies/javaserver-white-paper.html'
-      },
-      {
-        icon: servlet,
-        link: 'https://tomcat.apache.org/tomcat-5.5-doc/servletapi/index.html'
-      },
-      {
-        icon: mysql,
-        link: 'https://www.mysql.com/'
-      }
-    ],
-    image: sqlgateway,
-    source_code_link: 'https://github.com/LeTanTru/SqlGateway',
-    link: 'https://letantru.onrender.com/SqlGateway/home'
-  },
-  {
-    name: 'Email List JPA',
-    description: 'Email List JPA + Connection Pool by Hikari.',
-    tags: [
-      {
-        icon: java,
-        link: 'https://www.java.com/en/'
-      },
-      {
-        icon: jsp,
-        link: 'https://www.oracle.com/java/technologies/javaserver-white-paper.html'
-      },
-      {
-        icon: servlet,
-        link: 'https://tomcat.apache.org/tomcat-5.5-doc/servletapi/index.html'
-      },
-      {
-        icon: mysql,
-        link: 'https://www.mysql.com/'
-      }
-    ],
-    image: emailList,
-    source_code_link: 'https://github.com/LeTanTru/EmailJPA',
-    link: 'https://letantru.onrender.com/EmailJPA/index.jsp'
-  },
-  {
-    name: 'Send email with Java Mail API.',
-    description: 'Send email with Java Mail API.',
-    tags: [
-      {
-        icon: java,
-        link: 'https://www.java.com/en/'
-      },
-      {
-        icon: jsp,
-        link: 'https://www.oracle.com/java/technologies/javaserver-white-paper.html'
-      },
-      {
-        icon: servlet,
-        link: 'https://tomcat.apache.org/tomcat-5.5-doc/servletapi/index.html'
-      }
-    ],
-    image: sendEmail,
-    source_code_link: 'https://github.com/LeTanTru/SendEmail',
-    link: 'https://letantru.onrender.com/SendEmail/'
-  }
-];
-
 const projects = [
   {
     name: '3D rotation',
@@ -418,33 +233,29 @@ const projects = [
     link: 'https://letantrulovetravel.vercel.app/'
   },
   {
-    name: 'Paging with JDBC.',
-    description: 'Basic paging app with JDBC and Ajax.',
+    name: 'React Admin Dashboard',
+    description: 'Simple React Admin Dashboard.',
     tags: [
       {
-        icon: java,
-        link: 'https://www.java.com/en/'
+        icon: reactjs,
+        link: 'https://react.dev/'
       },
       {
-        icon: jsp,
-        link: 'https://www.oracle.com/java/technologies/javaserver-white-paper.html'
+        icon: tailwind,
+        link: 'https://tailwindcss.com/'
       },
       {
-        icon: servlet,
-        link: 'https://tomcat.apache.org/tomcat-5.5-doc/servletapi/index.html'
+        icon: framerMotion,
+        link: 'https://framermotion.framer.website/'
       },
       {
-        icon: mysql,
-        link: 'https://www.mysql.com/'
-      },
-      {
-        icon: ajax,
-        link: 'https://api.jquery.com/jQuery.ajax/'
+        icon: reactRouterDom,
+        link: 'https://reactrouter.com/'
       }
     ],
-    image: paging,
-    source_code_link: 'https://github.com/LeTanTru/PagingServlet',
-    link: 'https://letantru.onrender.com/Paging/'
+    image: adminDashboard,
+    source_code_link: 'https://github.com/LeTanTru/react-admin-dashboard',
+    link: 'https://letantru-admin-dashboard.vercel.app/'
   }
 ];
 
@@ -489,7 +300,6 @@ export {
   skills,
   technologies,
   experiences,
-  weeklyExercises,
   socials,
   projects,
   powers

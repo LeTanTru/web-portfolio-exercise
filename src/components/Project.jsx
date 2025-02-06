@@ -4,9 +4,7 @@ import { styles } from '../styles';
 import { SectionWrapper } from '../hoc/index';
 import { projects } from '../constants/index';
 import { Tilt } from 'react-tilt';
-import { Link } from 'react-router-dom';
 import { github } from '../assets/index';
-import WaveText from './WaveText';
 
 const ProjectCard = ({
   index,
@@ -55,7 +53,7 @@ const ProjectCard = ({
             {tags.map((tag, index) => (
               <div
                 key={tag.icon}
-                className='flex h-8 w-8 items-center justify-center rounded-full border border-white/[0.2] bg-black lg:h-10 lg:w-10'
+                className='flex h-8 w-8 items-center justify-center overflow-hidden rounded-full border border-white/[0.2] bg-black lg:h-10 lg:w-10'
                 style={{ transform: `translateX(-${index * 10}px)` }}
               >
                 <a href={tag.link}>
@@ -93,8 +91,7 @@ const Project = () => {
           className='mt-3 max-w-3xl text-[18px] leading-[1.5] text-secondary'
         >
           <p className='text-center md:text-left'>
-            This section shows some personal projects.
-          Click&nbsp;
+            This section shows some personal projects. Click&nbsp;
             <span className='inline-flex text-[18px] text-purple-400'>
               Live Demo
               <img src='/telegram.svg' className='ml-2' />
