@@ -30,25 +30,20 @@ import jquery from './tech/jquery.png';
 import aos from './tech/aos.png';
 import mysql from './tech/mysql.png';
 import ajax from './tech/ajax.png';
+import framerMotion from './framer-motion.png';
 
 import _3dRotation from './3d-rotation.png';
-import ch05_email from './ch05_email.png';
-import emailList from './emailListConnectionPool.png';
-import emailListUpdate from './emailListUpdate.png';
 import hcmute from './hcmute.png';
 import highSchool from './an-nghia-high-school.png';
 import lovetravel from './lovetravel.png';
-import shoppingCart from './shoppingcart.png';
-import sqlgateway from './sql-gateway.png';
-import survey from './survey.png';
-import sendEmail from './send-email.png';
-import paging from './paging.png';
 import user from './user.svg';
 import dob from './dateofbirth.svg';
 import phone from './phone.svg';
 import email from './email.svg';
 import english from './english.svg';
 import avatar from './avatar.jpg';
+import adminDashboard from './admin-dashboard.png';
+import reactRouterDom from './react-router.png'
 
 export {
   avatar,
@@ -57,20 +52,14 @@ export {
   phone,
   dob,
   user,
-  paging,
   ajax,
-  sendEmail,
   _3dRotation,
   mysql,
-  sqlgateway,
   backend,
-  ch05_email,
   close,
   creator,
   css,
   docker,
-  emailList,
-  emailListUpdate,
   figma,
   git,
   github,
@@ -91,13 +80,14 @@ export {
   reactjs,
   redux,
   servlet,
-  shoppingCart,
-  survey,
   tailwind,
   threejs,
   threejsWhiteFill,
   typescript,
   vite,
   web,
-  aos
+  aos,
+  adminDashboard,
+  framerMotion,
+  reactRouterDom
 };

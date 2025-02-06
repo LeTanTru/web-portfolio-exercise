@@ -1,23 +1,21 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense } from 'react';
 import { BrowserRouter } from 'react-router-dom';
-
-import {
-  About,
-  Skills,
-  Experience,
-  Hero,
-  Navbar,
-  Tech,
-  Project,
-  StarsCanvas,
-  Footer,
-  WeeklyExercise,
-  SnakeGitCommit,
-  Earth
-} from './components';
-import Particle from './components/Particle';
 import ScrollProgressBar from '@components/ScrollProgressBar';
 import Loading from './components/Loading';
+import Particle from '@components/Particle';
+import {
+  About,
+  Earth,
+  Experience,
+  Footer,
+  Hero,
+  Navbar,
+  Project,
+  Skills,
+  SnakeGitCommit,
+  StarsCanvas,
+  Tech
+} from '@components/index';
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -45,27 +43,31 @@ const App = () => {
       </div>
 
       <div className='hidden md:block'>
-        {loading && <Loading />}
-        <Particle />
-        <div className={`relative bg-primary`}>
-          <ScrollProgressBar />
-          <div className='w-full bg-hero-pattern bg-cover bg-center bg-no-repeat'>
-            <Navbar />
-            <Hero />
-          </div>
-          <About />
-          <Skills />
-          <Experience />
-          <Tech />
-          <WeeklyExercise />
-          <Project />
-          <SnakeGitCommit />
-          <div className='relative z-2'>
-            <Earth />
-            <StarsCanvas />
-          </div>
-          <Footer />
-        </div>
+        {loading ? (
+          <Loading />
+        ) : (
+          <Suspense fallback={<Loading />}>
+            <Particle />
+            <div className={`relative bg-primary`}>
+              <ScrollProgressBar />
+              <div className='w-full bg-hero-pattern bg-cover bg-center bg-no-repeat'>
+                <Navbar />
+                <Hero />
+              </div>
+              <About />
+              <Skills />
+              <Experience />
+              <Tech />
+              <Project />
+              <SnakeGitCommit />
+              <div className='relative z-2'>
+                <Earth />
+                <StarsCanvas />
+              </div>
+              <Footer />
+            </div>
+          </Suspense>
+        )}
       </div>
     </BrowserRouter>
   );
