@@ -13,7 +13,10 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
-  link
+  link,
+  createdAt,
+  completedAt,
+  latestUpdatedAt
 }) => {
   return (
     <motion.div variants={fadeIn('up', 'spring', index * 0.5, 0.75)}>
@@ -48,7 +51,17 @@ const ProjectCard = ({
             {description}
           </p>
         </div>
-        <div className='mt-4 flex items-end justify-between'>
+        <div className='w-full border-b border-solid border-violet-900 mb-2 mt-2'></div>
+        <div className='flex items-center justify-between'>
+          <span className='text-xs text-gray-300'>
+            {createdAt} - {completedAt}
+          </span>
+
+          <span className='text-xs text-gray-300'>
+            Latest updated: {latestUpdatedAt}
+          </span>
+        </div>
+        <div className='mt-2 flex items-end justify-between'>
           <div className='flex flex-wrap'>
             {tags.map((tag, index) => (
               <div

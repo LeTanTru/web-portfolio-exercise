@@ -200,7 +200,10 @@ const projects = [
     ],
     image: _3dRotation,
     source_code_link: 'https://github.com/LeTanTru/3d-rotation-html-css',
-    link: 'https://letantru3d-rotation.vercel.app/'
+    link: 'https://letantru3d-rotation.vercel.app/',
+    createdAt: '14/9/2024',
+    completedAt: '14/9/2024',
+    latestUpdatedAt: '14/9/2024'
   },
   {
     name: 'Love Travel UI Clone',
@@ -230,7 +233,10 @@ const projects = [
     ],
     image: lovetravel,
     source_code_link: 'https://github.com/LeTanTru/Love-Travel-Clone-UI',
-    link: 'https://letantrulovetravel.vercel.app/'
+    link: 'https://letantrulovetravel.vercel.app/',
+    createdAt: '28/8/2021',
+    completedAt: '8/9/2021',
+    latestUpdatedAt: '27/9/2024'
   },
   {
     name: 'React Admin Dashboard',
@@ -255,7 +261,10 @@ const projects = [
     ],
     image: adminDashboard,
     source_code_link: 'https://github.com/LeTanTru/react-admin-dashboard',
-    link: 'https://letantru-admin-dashboard.vercel.app/'
+    link: 'https://letantru-admin-dashboard.vercel.app/',
+    createdAt: '1/2/2024',
+    completedAt: '5/2/2024',
+    latestUpdatedAt: '5/2/2024'
   }
 ];
 
