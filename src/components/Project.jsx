@@ -51,7 +51,7 @@ const ProjectCard = ({
             {description}
           </p>
         </div>
-        <div className='w-full border-b border-solid border-violet-900 mb-2 mt-2'></div>
+        <div className='mb-2 mt-2 w-full border-b border-solid border-violet-900'></div>
         <div className='flex items-center justify-between'>
           <span className='text-xs text-gray-300'>
             {createdAt} - {completedAt}
@@ -62,29 +62,29 @@ const ProjectCard = ({
           </span>
         </div>
         <div className='mt-2 flex items-end justify-between'>
-          <div className='flex flex-wrap'>
+          <div className='flex flex-nowrap'>
             {tags.map((tag, index) => (
               <div
                 key={tag.icon}
-                className='flex h-8 w-8 items-center justify-center overflow-hidden rounded-full border border-white/[0.2] bg-black lg:h-10 lg:w-10'
+                className='flex h-8 w-8 flex-nowrap items-center justify-center overflow-hidden rounded-full border border-white/[0.2] bg-black lg:h-10 lg:w-10'
                 style={{ transform: `translateX(-${index * 10}px)` }}
               >
-                <a href={tag.link}>
+                <a href={tag.link} target='_blank'>
                   <img src={tag.icon} className='p-[2px]' />
                 </a>
               </div>
             ))}
           </div>
-          <div className='flex'>
-            <a
-              href={link}
-              className='flex text-[18px] text-purple-400'
-              target='_blank'
-            >
-              Live demo
-            </a>
-            <img src='/telegram.svg' className='ml-2' />
-          </div>
+        </div>
+        <div className='ml-auto flex'>
+          <a
+            href={link}
+            className='flex text-[18px] text-purple-400'
+            target='_blank'
+          >
+            Live demo
+          </a>
+          <img src='/telegram.svg' className='ml-2' />
         </div>
       </Tilt>
     </motion.div>

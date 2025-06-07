@@ -30,7 +30,11 @@ import jquery from './tech/jquery.png';
 import aos from './tech/aos.png';
 import mysql from './tech/mysql.png';
 import ajax from './tech/ajax.png';
-import framerMotion from './framer-motion.png';
+import reactRouterDom from './tech/react-router.png';
+import framerMotion from './tech/framer-motion.png';
+import socket from './tech/socket.svg';
+import zustand from './tech/zustand.png';
+import cloudinary from './tech/cloudinary.png';
 
 import _3dRotation from './3d-rotation.png';
 import hcmute from './hcmute.png';
@@ -43,9 +47,11 @@ import email from './email.svg';
 import english from './english.svg';
 import avatar from './avatar.jpg';
 import adminDashboard from './admin-dashboard.png';
-import reactRouterDom from './react-router.png'
+import chatApp from './chat-app.png';
 
 export {
+  cloudinary,
+  zustand,
   avatar,
   english,
   email,
@@ -89,5 +95,7 @@ export {
   aos,
   adminDashboard,
   framerMotion,
-  reactRouterDom
+  reactRouterDom,
+  chatApp,
+  socket
 };

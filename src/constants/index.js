@@ -1,33 +1,39 @@
-import { adminDashboard, framerMotion, reactRouterDom } from '@assets/index';
 import {
+  socket,
   _3dRotation,
+  adminDashboard,
+  aos,
   backend,
+  chatApp,
   css,
+  dob,
   docker,
+  email,
+  english,
   figma,
+  framerMotion,
   git,
   hcmute,
   highSchool,
   html,
   javascript,
+  jquery,
   lovetravel,
   mongodb,
   nodejs,
+  phone,
   reactjs,
+  reactRouterDom,
   redux,
   tailwind,
   threejs,
   threejsWhiteFill,
   typescript,
+  user,
   vite,
   web,
-  jquery,
-  aos,
-  user,
-  english,
-  dob,
-  email,
-  phone
+  zustand,
+  cloudinary
 } from '../assets';
 
 const navLinks = [
@@ -265,6 +271,50 @@ const projects = [
     createdAt: '1/2/2024',
     completedAt: '5/2/2024',
     latestUpdatedAt: '5/2/2024'
+  },
+  {
+    name: 'React Admin Dashboard',
+    description: 'Simple React Admin Dashboard.',
+    tags: [
+      {
+        icon: reactjs,
+        link: 'https://react.dev/'
+      },
+      {
+        icon: tailwind,
+        link: 'https://tailwindcss.com/'
+      },
+      {
+        icon: nodejs,
+        link: 'https://nodejs.org/en'
+      },
+      {
+        icon: mongodb,
+        link: 'https://www.mongodb.com/'
+      },
+      {
+        icon: reactRouterDom,
+        link: 'https://reactrouter.com/'
+      },
+      {
+        icon: socket,
+        link: 'https://socket.io/'
+      },
+      {
+        icon: zustand,
+        link: 'https://zustand-demo.pmnd.rs/'
+      },
+      {
+        icon: cloudinary,
+        link: 'https://cloudinary.com/'
+      }
+    ],
+    image: chatApp,
+    source_code_link: 'https://github.com/LeTanTru/MERN-Chat-App',
+    link: 'https://mern-chat-app-sepia.vercel.app/',
+    createdAt: '21/5/2025',
+    completedAt: '7/6/2025',
+    latestUpdatedAt: '7/6/2025'
   }
 ];
 
@@ -305,11 +355,11 @@ const powers = [
 
 export {
   abouts,
-  navLinks,
-  skills,
-  technologies,
   experiences,
-  socials,
+  navLinks,
+  powers,
   projects,
-  powers
+  skills,
+  socials,
+  technologies
 };
