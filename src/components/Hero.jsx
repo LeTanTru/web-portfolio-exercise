@@ -24,12 +24,12 @@ const Hero = () => {
           <p
             className={`${styles.heroSubText} animate-zoom block bg-gradient-to-r from-indigo-500 to-blue-500 bg-clip-text text-transparent`}
           >
-            Welcome to my website
+            Welcome to my portfolio!
           </p>
         </div>
       </div>
       <Astronaut />
-      <div className='z-1 absolute bottom-32 flex w-full items-center justify-center xs:bottom-10'>
+      <div className='absolute bottom-32 z-1 flex w-full items-center justify-center xs:bottom-10'>
         <a href='#about'>
           <div className='flex h-[64px] w-[35px] items-center justify-center rounded-3xl border-4 border-solid border-secondary'>
             <motion.div
