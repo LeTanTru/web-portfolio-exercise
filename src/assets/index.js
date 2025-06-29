@@ -36,20 +36,22 @@ import socket from './tech/socket.svg';
 import zustand from './tech/zustand.png';
 import cloudinary from './tech/cloudinary.png';
 
-import _3dRotation from './3d-rotation.png';
+import _3dRotation from './project/3d-rotation.png';
 import hcmute from './hcmute.png';
 import highSchool from './an-nghia-high-school.png';
-import lovetravel from './lovetravel.png';
+import lovetravel from './project/lovetravel.png';
 import user from './user.svg';
 import dob from './dateofbirth.svg';
 import phone from './phone.svg';
 import email from './email.svg';
 import english from './english.svg';
 import avatar from './avatar.jpg';
-import adminDashboard from './admin-dashboard.png';
-import chatApp from './chat-app.png';
+import adminDashboard from './project/admin-dashboard.png';
+import chatApp from './project/chat-app.png';
+import virtualr from './project/virtualr.png';
 
 export {
+  virtualr,
   cloudinary,
   zustand,
   avatar,

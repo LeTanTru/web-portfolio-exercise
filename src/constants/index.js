@@ -1,3 +1,4 @@
+import { virtualr } from '@assets/index';
 import {
   socket,
   _3dRotation,
@@ -315,6 +316,26 @@ const projects = [
     createdAt: '21/5/2025',
     completedAt: '7/6/2025',
     latestUpdatedAt: '7/6/2025'
+  },
+  {
+    name: 'VirtualR',
+    description: 'Virtual Reality Experience  React, and Tailwind CSS.',
+    tags: [
+      {
+        icon: reactjs,
+        link: 'https://react.dev/'
+      },
+      {
+        icon: tailwind,
+        link: 'https://tailwindcss.com/'
+      }
+    ],
+    image: virtualr,
+    source_code_link: 'https://github.com/LeTanTru/virtualr',
+    link: 'https://letantru-virtualr.vercel.app/',
+    createdAt: '28/6/2025',
+    completedAt: '29/6/2025',
+    latestUpdatedAt: '29/6/2025'
   }
 ];
 
