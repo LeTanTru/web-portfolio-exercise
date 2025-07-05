@@ -84,7 +84,7 @@ const ProjectCard = ({
           >
             Live demo
           </a>
-          <img src='/telegram.svg' className='ml-2' />
+          <img src='./telegram.svg' className='ml-2' />
         </div>
       </Tilt>
     </motion.div>
@@ -107,7 +107,7 @@ const Project = () => {
             This section shows some personal projects. Click&nbsp;
             <span className='inline-flex text-[18px] text-purple-400'>
               Live Demo
-              <img src='/telegram.svg' className='ml-2' />
+              <img src='./telegram.svg' className='ml-2' />
             </span>
             &nbsp; to experience website. Click the github icon &nbsp;
             <span className='black-gradient inline-flex h-10 w-10 cursor-pointer items-center justify-center rounded-full'>

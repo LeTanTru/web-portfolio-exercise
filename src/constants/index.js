@@ -342,27 +342,27 @@ const projects = [
 const socials = [
   {
     name: 'facebook',
-    icon: '/facebook-2.svg',
+    icon: './facebook-2.svg',
     link: 'https://www.facebook.com/dopaminee1311'
   },
   {
     name: 'instagram',
-    icon: '/instagram.svg',
+    icon: './instagram.svg',
     link: ''
   },
   {
     name: 'github',
-    icon: '/github.svg',
+    icon: './github.svg',
     link: 'https://github.com/LeTanTru'
   },
   {
     name: 'twitter',
-    icon: '/twitter.svg',
+    icon: './twitter.svg',
     link: ''
   },
   {
     name: 'linkedin',
-    icon: '/linkedin.svg',
+    icon: './linkedin.svg',
     link: ''
   }
 ];
