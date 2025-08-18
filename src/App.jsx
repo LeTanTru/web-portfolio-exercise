@@ -17,14 +17,13 @@ import {
   Tech
 } from '@/components';
 
-import heroBg from '@/assets/herobg.png'; // ✅ import ảnh đúng cách
+import heroBg from '@/assets/herobg.png';
 
 const App = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const handleLoad = () => {
-      // chờ tối đa 1s, hoặc bỏ hẳn setTimeout
       const timer = setTimeout(() => {
         setLoading(false);
       }, 1000);
@@ -44,7 +43,6 @@ const App = () => {
         {loading ? (
           <Loading />
         ) : (
-          // ✅ Suspense phải bọc toàn bộ app
           <Suspense fallback={<Loading />}>
             <Particle />
             <div className='relative bg-primary'>
