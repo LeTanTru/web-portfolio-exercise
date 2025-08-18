@@ -274,8 +274,8 @@ const projects = [
     latestUpdatedAt: '5/2/2024'
   },
   {
-    name: 'React Admin Dashboard',
-    description: 'Simple React Admin Dashboard.',
+    name: 'React Chat App',
+    description: 'Simple React Chat App.',
     tags: [
       {
         icon: reactjs,
