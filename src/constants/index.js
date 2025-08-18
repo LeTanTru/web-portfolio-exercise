@@ -182,12 +182,12 @@ const experiences = [
     points: []
   },
   {
-    title: 'Third-year Student',
+    title: 'Final-year Student',
     company_name: 'Ho Chi Minh City University of Education And Technology',
     icon: hcmute,
     iconBg: '#E6DEDD',
     date: 'Sep 2022 - Present',
-    points: ['Third-year Student in Faculty of Information Technology.']
+    points: ['Final-year Student in Faculty of Information Technology.']
   }
 ];
 
