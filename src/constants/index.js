@@ -269,9 +269,9 @@ const projects = [
     image: adminDashboard,
     source_code_link: 'https://github.com/LeTanTru/react-admin-dashboard',
     link: 'https://letantru-admin-dashboard.vercel.app/',
-    createdAt: '1/2/2024',
-    completedAt: '5/2/2024',
-    latestUpdatedAt: '5/2/2024'
+    createdAt: '1/2/2025',
+    completedAt: '5/2/2025',
+    latestUpdatedAt: '5/2/2025'
   },
   {
     name: 'React Chat App',
