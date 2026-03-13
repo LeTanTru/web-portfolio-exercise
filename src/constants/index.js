@@ -201,12 +201,12 @@ const technologies = [
     name: 'react-hook-form',
     icon: reactHookForm,
     color: 'bg-gradient-to-r from-red-500 to-pink-500'
-  },
-  {
-    name: 'dnd-kit',
-    icon: dndKit,
-    color: 'bg-gradient-to-r from-red-500 to-pink-500'
   }
+  // {
+  //   name: 'dnd-kit',
+  //   icon: dndKit,
+  //   color: 'bg-gradient-to-r from-red-500 to-pink-500'
+  // }
 ];
 
 const experiences = [

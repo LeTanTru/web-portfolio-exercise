@@ -8,7 +8,7 @@ const Astronaut = () => {
     <div className='flex h-screen snap-center flex-col items-center justify-between'>
       <div className='flex h-full w-[1400px] snap-center justify-between md:w-full md:flex-col md:items-center md:justify-center'>
         <div className='flex-3 relative md:w-full md:flex-1'>
-          <Canvas className="w-[800px] h-[600px]">
+          {/* <Canvas className='h-[600px] w-[800px]'>
             <Suspense fallback={null}>
               <OrbitControls enableZoom={false} />
               <ambientLight intensity={1} />
@@ -22,11 +22,11 @@ const Astronaut = () => {
                 />
               </Sphere>
             </Suspense>
-          </Canvas>
+          </Canvas> */}
           <img
             src={moon}
             alt='moon'
-            className='absolute inset-0 m-auto h-[300px] w-[300px] animate object-contain md:h-[400px] md:w-[600px]'
+            className='animate absolute inset-0 m-auto h-[300px] w-[300px] object-contain md:h-[400px] md:w-[600px]'
           />
         </div>
       </div>
