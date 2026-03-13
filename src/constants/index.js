@@ -1,17 +1,14 @@
-import { virtualr } from '@assets/index';
 import {
   socket,
   _3dRotation,
   adminDashboard,
   aos,
-  backend,
   chatApp,
   css,
   dob,
   docker,
   email,
   english,
-  figma,
   framerMotion,
   git,
   hcmute,
@@ -27,14 +24,24 @@ import {
   reactRouterDom,
   redux,
   tailwind,
-  threejs,
   threejsWhiteFill,
   typescript,
   user,
   vite,
   web,
   zustand,
-  cloudinary
+  cloudinary,
+  dvms,
+  moviehub,
+  virtualr,
+  nextjs,
+  reactQuery,
+  typescriptCircle,
+  reactHookForm,
+  vidstack,
+  zod,
+  dndKit,
+  imageConverter
 } from '../assets';
 
 const navLinks = [
@@ -59,7 +66,7 @@ const navLinks = [
 const abouts = [
   {
     icon: user,
-    value: 'Lê Tấn Trụ (dopamine)'
+    value: 'Lê Tấn Trụ'
   },
   {
     icon: dob,
@@ -86,15 +93,15 @@ const skills = [
     fromColor: 'from-[#D16BA5]',
     viaColor: 'via-[#86A8E7]',
     toColor: 'to-[#5FFBF1]'
-  },
-
-  {
-    title: 'Backend Developer',
-    icon: backend,
-    fromColor: 'from-[#879AF2]',
-    viaColor: 'via-[#8233C5]',
-    toColor: 'to-[#E963FD]'
   }
+
+  // {
+  //   title: 'Backend Developer',
+  //   icon: backend,
+  //   fromColor: 'from-[#879AF2]',
+  //   viaColor: 'via-[#8233C5]',
+  //   toColor: 'to-[#E963FD]'
+  // }
   // {
   //   title: 'React Native Developer',
   //   icon: mobile,
@@ -140,35 +147,65 @@ const technologies = [
     icon: tailwind,
     color: 'bg-gradient-to-r from-sky-400 to-cyan-300'
   },
-  {
-    name: 'Node JS',
-    icon: nodejs,
-    color: 'bg-gradient-to-r from-emerald-500 to-lime-600'
-  },
-  {
-    name: 'MongoDB',
-    icon: mongodb,
-    color: 'bg-gradient-to-r from-lime-400 to-lime-500'
-  },
-  {
-    name: 'Three JS',
-    icon: threejs,
-    color: 'bg-gradient-to-r from-gray-400 to-slate-600'
-  },
+  // {
+  //   name: 'Node JS',
+  //   icon: nodejs,
+  //   color: 'bg-gradient-to-r from-emerald-500 to-lime-600'
+  // },
+  // {
+  //   name: 'MongoDB',
+  //   icon: mongodb,
+  //   color: 'bg-gradient-to-r from-lime-400 to-lime-500'
+  // },
+  // {
+  //   name: 'Three JS',
+  //   icon: threejs,
+  //   color: 'bg-gradient-to-r from-gray-400 to-slate-600'
+  // },
   {
     name: 'git',
     icon: git,
     color: 'bg-gradient-to-r from-orange-400 to-rose-400'
   },
-  {
-    name: 'figma',
-    icon: figma,
-    color: 'bg-gradient-to-r from-rose-400 to-red-500'
-  },
+  // {
+  //   name: 'figma',
+  //   icon: figma,
+  //   color: 'bg-gradient-to-r from-rose-400 to-red-500'
+  // },
   {
     name: 'docker',
     icon: docker,
     color: 'bg-gradient-to-r from-blue-600 to-violet-600'
+  },
+  {
+    name: 'zustand',
+    icon: zustand,
+    color: 'bg-gradient-to-r from-amber-500 to-orange-600'
+  },
+  {
+    name: 'framer-motion',
+    icon: framerMotion,
+    color: 'bg-gradient-to-r from-fuchsia-500 to-cyan-500'
+  },
+  {
+    name: 'react-query',
+    icon: reactQuery,
+    color: 'bg-gradient-to-r from-red-500 to-pink-500'
+  },
+  {
+    name: 'zod',
+    icon: zod,
+    color: 'bg-gradient-to-r from-blue-500 to-indigo-600'
+  },
+  {
+    name: 'react-hook-form',
+    icon: reactHookForm,
+    color: 'bg-gradient-to-r from-red-500 to-pink-500'
+  },
+  {
+    name: 'dnd-kit',
+    icon: dndKit,
+    color: 'bg-gradient-to-r from-red-500 to-pink-500'
   }
 ];
 
@@ -188,29 +225,55 @@ const experiences = [
     iconBg: '#E6DEDD',
     date: 'Sep 2022 - Present',
     points: ['Final-year Student in Faculty of Information Technology.']
+  },
+  {
+    title: 'Intern Frontend Developer',
+    company_name: 'DVMS',
+    icon: dvms,
+    iconBg: '#E6DEDD',
+    date: 'Jun 2025 - Sep 2025',
+    points: [
+      'Analyzed and worked with an existing React.js codebase to understand the system architecture and development workflow.',
+      'Developed internal sample applications based on the company’s frontend architecture to practice reusable component patterns.',
+      'Integrated RESTful APIs using Axios and handled asynchronous data fetching in React applications.',
+      'Built and maintained CMS pages for managing content and administrative data.',
+      'Collaborated with backend developers to ensure accurate API integration and consistent data flow.'
+    ]
   }
 ];
 
 const projects = [
   {
-    name: '3D rotation',
-    description: 'Infinite 3D rotation with HTML, CSS.',
+    name: 'MovieHub',
+    description:
+      'Public movie streaming website where users can discover, search, and watch movies online with responsive UI and adaptive video playback.',
     tags: [
       {
-        icon: html,
-        link: 'https://developer.mozilla.org/en-US/docs/Web/HTML'
+        icon: nextjs,
+        link: 'https://nextjs.org/'
       },
       {
-        icon: css,
-        link: 'https://developer.mozilla.org/en-US/docs/Web/CSS'
-      }
+        icon: typescriptCircle,
+        link: 'https://www.typescriptlang.org/'
+      },
+      {
+        icon: tailwind,
+        link: 'https://tailwindcss.com/'
+      },
+      {
+        icon: reactQuery,
+        link: 'https://tanstack.com/query/v5/docs/framework/react/overview/'
+      },
+      { icon: zustand, link: 'https://zustand-demo.pmnd.rs/' },
+      { icon: vidstack, link: 'https://www.vidstack.io/' },
+      { icon: framerMotion, link: 'https://www.framer.com/motion/' }
     ],
-    image: _3dRotation,
-    source_code_link: 'https://github.com/LeTanTru/3d-rotation-html-css',
-    link: 'https://letantru3d-rotation.vercel.app/',
-    createdAt: '14/9/2024',
-    completedAt: '14/9/2024',
-    latestUpdatedAt: '14/9/2024'
+    image: moviehub,
+    source_code_link: 'https://github.com/LeTanTru/MovieHub-Fe',
+    link: 'https://moviehub-fe.vercel.app/',
+    createdAt: '26/07/2025',
+    completedAt: 'Present',
+    latestUpdatedAt: 'Present'
   },
   {
     name: 'Love Travel UI Clone',
@@ -336,6 +399,51 @@ const projects = [
     createdAt: '28/6/2025',
     completedAt: '29/6/2025',
     latestUpdatedAt: '29/6/2025'
+  },
+  {
+    name: '3D rotation',
+    description: 'Infinite 3D rotation with HTML, CSS.',
+    tags: [
+      {
+        icon: html,
+        link: 'https://developer.mozilla.org/en-US/docs/Web/HTML'
+      },
+      {
+        icon: css,
+        link: 'https://developer.mozilla.org/en-US/docs/Web/CSS'
+      }
+    ],
+    image: _3dRotation,
+    source_code_link: 'https://github.com/LeTanTru/3d-rotation-html-css',
+    link: 'https://letantru3d-rotation.vercel.app/',
+    createdAt: '14/9/2024',
+    completedAt: '14/9/2024',
+    latestUpdatedAt: '14/9/2024'
+  },
+  {
+    name: 'Image Converter',
+    description:
+      'An Image Converter with HTML, CSS, JavaScript to convert image with many formats.',
+    tags: [
+      {
+        icon: html,
+        link: 'https://developer.mozilla.org/en-US/docs/Web/HTML'
+      },
+      {
+        icon: css,
+        link: 'https://developer.mozilla.org/en-US/docs/Web/CSS'
+      },
+      {
+        icon: javascript,
+        link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript'
+      }
+    ],
+    image: imageConverter,
+    source_code_link: 'https://github.com/LeTanTru/image-converter',
+    link: 'https://image-converter-virid-ten.vercel.app/',
+    createdAt: '11/03/2026',
+    completedAt: '11/03/2026',
+    latestUpdatedAt: '11/03/2026'
   }
 ];
 

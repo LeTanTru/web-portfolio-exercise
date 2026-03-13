@@ -61,7 +61,7 @@ const ProjectCard = ({
             Latest updated: {latestUpdatedAt}
           </span>
         </div>
-        <div className='mt-2 flex items-end justify-between'>
+        <div className='mt-4 flex items-end justify-between'>
           <div className='flex flex-nowrap'>
             {tags.map((tag, index) => (
               <div
@@ -76,7 +76,7 @@ const ProjectCard = ({
             ))}
           </div>
         </div>
-        <div className='ml-auto flex'>
+        <div className='ml-auto mt-2 flex'>
           <a
             href={link}
             className='flex text-[18px] text-purple-400'

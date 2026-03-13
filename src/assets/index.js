@@ -31,7 +31,7 @@ import aos from './tech/aos.png';
 import mysql from './tech/mysql.png';
 import ajax from './tech/ajax.png';
 import reactRouterDom from './tech/react-router.png';
-import framerMotion from './tech/framer-motion.png';
+import framerMotion from './tech/framer-motion.svg';
 import socket from './tech/socket.svg';
 import zustand from './tech/zustand.png';
 import cloudinary from './tech/cloudinary.png';
@@ -49,6 +49,18 @@ import avatar from './avatar.jpg';
 import adminDashboard from './project/admin-dashboard.png';
 import chatApp from './project/chat-app.png';
 import virtualr from './project/virtualr.png';
+import dvms from './dvms.png';
+import moviehub from './project/moviehub.png';
+import nextjs from './tech/nextjs.webp';
+import reactQuery from './tech/react-query.webp';
+import typescriptCircle from './tech/typescript-circle.webp';
+import reactHookForm from './tech/react-hook-form.png';
+import swiper from './tech/swiper.png';
+import vidstack from './tech/vidstack.png';
+import zod from './tech/zod.png';
+import axios from './tech/axios.png';
+import dndKit from './tech/dnd-kit.png';
+import imageConverter from './project/image-converter.png';
 
 export {
   virtualr,
@@ -99,5 +111,17 @@ export {
   framerMotion,
   reactRouterDom,
   chatApp,
-  socket
+  socket,
+  dvms,
+  moviehub,
+  nextjs,
+  reactQuery,
+  typescriptCircle,
+  reactHookForm,
+  swiper,
+  vidstack,
+  zod,
+  axios,
+  dndKit,
+  imageConverter
 };

@@ -17,7 +17,7 @@ const Tech = () => {
             <div className='h-full w-full text-center'>
               <BallCanvas icon={tech.icon} />
               <h3
-                className={`absolute left-1/2 top-[-30px] flex -translate-x-1/2 items-center justify-center bg-clip-text ${tech.color} min-w-[130px] text-[18px] font-semibold text-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100`}
+                className={`absolute left-1/2 top-[-30px] flex -translate-x-1/2 items-center justify-center bg-clip-text ${tech.color} min-w-[130px] whitespace-nowrap text-[18px] font-semibold text-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100`}
               >
                 {tech.name}
               </h3>
