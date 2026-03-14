@@ -37,11 +37,10 @@ import {
   nextjs,
   reactQuery,
   typescriptCircle,
-  reactHookForm,
   vidstack,
-  zod,
-  dndKit,
-  imageConverter
+  imageConverter,
+  nextjsBlack,
+  github
 } from '../assets';
 
 const navLinks = [
@@ -112,6 +111,7 @@ const skills = [
 ];
 
 const technologies = [
+  // Core Web
   {
     name: 'HTML 5',
     icon: html,
@@ -132,81 +132,59 @@ const technologies = [
     icon: typescript,
     color: 'bg-gradient-to-r from-blue-500 to-blue-600'
   },
+
+  // Framework / Library
   {
-    name: 'React JS',
+    name: 'React.js',
     icon: reactjs,
     color: 'bg-gradient-to-r from-indigo-400 to-cyan-400'
   },
+  {
+    name: 'Next.js',
+    icon: nextjsBlack,
+    color: 'bg-gradient-to-r from-indigo-400 to-cyan-400'
+  },
+
+  // State Management / Data Fetching
   {
     name: 'Redux Toolkit',
     icon: redux,
     color: 'bg-gradient-to-r from-fuchsia-500 to-pink-500'
   },
   {
-    name: 'Tailwind CSS',
-    icon: tailwind,
-    color: 'bg-gradient-to-r from-sky-400 to-cyan-300'
-  },
-  // {
-  //   name: 'Node JS',
-  //   icon: nodejs,
-  //   color: 'bg-gradient-to-r from-emerald-500 to-lime-600'
-  // },
-  // {
-  //   name: 'MongoDB',
-  //   icon: mongodb,
-  //   color: 'bg-gradient-to-r from-lime-400 to-lime-500'
-  // },
-  // {
-  //   name: 'Three JS',
-  //   icon: threejs,
-  //   color: 'bg-gradient-to-r from-gray-400 to-slate-600'
-  // },
-  {
-    name: 'git',
-    icon: git,
-    color: 'bg-gradient-to-r from-orange-400 to-rose-400'
-  },
-  // {
-  //   name: 'figma',
-  //   icon: figma,
-  //   color: 'bg-gradient-to-r from-rose-400 to-red-500'
-  // },
-  {
-    name: 'docker',
-    icon: docker,
-    color: 'bg-gradient-to-r from-blue-600 to-violet-600'
-  },
-  {
-    name: 'zustand',
+    name: 'Zustand',
     icon: zustand,
     color: 'bg-gradient-to-r from-amber-500 to-orange-600'
   },
   {
-    name: 'framer-motion',
-    icon: framerMotion,
-    color: 'bg-gradient-to-r from-fuchsia-500 to-cyan-500'
-  },
-  {
-    name: 'react-query',
+    name: 'Tanstack Query',
     icon: reactQuery,
     color: 'bg-gradient-to-r from-red-500 to-pink-500'
   },
+
+  // Styling / Animation
   {
-    name: 'zod',
-    icon: zod,
-    color: 'bg-gradient-to-r from-blue-500 to-indigo-600'
+    name: 'Tailwind CSS',
+    icon: tailwind,
+    color: 'bg-gradient-to-r from-sky-400 to-cyan-300'
+  },
+
+  // Tools / DevOps
+  {
+    name: 'Git',
+    icon: git,
+    color: 'bg-gradient-to-r from-orange-400 to-rose-400'
   },
   {
-    name: 'react-hook-form',
-    icon: reactHookForm,
-    color: 'bg-gradient-to-r from-red-500 to-pink-500'
+    name: 'Github',
+    icon: github,
+    color: 'bg-gradient-to-r from-orange-400 to-rose-400'
+  },
+  {
+    name: 'Docker',
+    icon: docker,
+    color: 'bg-gradient-to-r from-blue-600 to-violet-600'
   }
-  // {
-  //   name: 'dnd-kit',
-  //   icon: dndKit,
-  //   color: 'bg-gradient-to-r from-red-500 to-pink-500'
-  // }
 ];
 
 const experiences = [
@@ -338,7 +316,8 @@ const projects = [
   },
   {
     name: 'React Chat App',
-    description: 'Simple React Chat App.',
+    description:
+      'Simple React Chat App. Note: Backend is deployed on Render (render.com), so it may take some minutes to wake up if there is no request for a long time.',
     tags: [
       {
         icon: reactjs,
@@ -423,7 +402,7 @@ const projects = [
   {
     name: 'Image Converter',
     description:
-      'An Image Converter with HTML, CSS, JavaScript to convert image with many formats.',
+      'An Image Converter with HTML, CSS, JavaScript to convert image with many different formats.',
     tags: [
       {
         icon: html,

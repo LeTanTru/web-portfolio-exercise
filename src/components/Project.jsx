@@ -79,10 +79,10 @@ const ProjectCard = ({
         <div className='ml-auto mt-2 flex'>
           <a
             href={link}
-            className='flex text-[18px] text-purple-400'
+            className='flex text-base text-purple-400'
             target='_blank'
           >
-            Live demo
+            Live Demo
           </a>
           <img src='./telegram.svg' className='ml-2' />
         </div>

@@ -61,6 +61,7 @@ import zod from './tech/zod.png';
 import axios from './tech/axios.png';
 import dndKit from './tech/dnd-kit.png';
 import imageConverter from './project/image-converter.png';
+import nextjsBlack from './tech/nextjs-black.png';
 
 export {
   virtualr,
@@ -123,5 +124,6 @@ export {
   zod,
   axios,
   dndKit,
-  imageConverter
+  imageConverter,
+  nextjsBlack
 };
