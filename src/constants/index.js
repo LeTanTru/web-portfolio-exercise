@@ -361,7 +361,8 @@ const projects = [
   },
   {
     name: 'VirtualR',
-    description: 'Virtual Reality Experience  React, and Tailwind CSS.',
+    description:
+      'Landing Page Virtual Reality Experience with React and Tailwind CSS.',
     tags: [
       {
         icon: reactjs,
