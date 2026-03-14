@@ -433,25 +433,25 @@ const socials = [
     icon: './facebook-2.svg',
     link: 'https://www.facebook.com/dopaminee1311'
   },
-  {
-    name: 'instagram',
-    icon: './instagram.svg',
-    link: ''
-  },
+  // {
+  //   name: 'instagram',
+  //   icon: './instagram.svg',
+  //   link: ''
+  // },
   {
     name: 'github',
     icon: './github.svg',
     link: 'https://github.com/LeTanTru'
   },
-  {
-    name: 'twitter',
-    icon: './twitter.svg',
-    link: ''
-  },
+  // {
+  //   name: 'twitter',
+  //   icon: './twitter.svg',
+  //   link: ''
+  // },
   {
     name: 'linkedin',
     icon: './linkedin.svg',
-    link: ''
+    link: 'https://www.linkedin.com/in/letantru/'
   }
 ];
 
