@@ -354,10 +354,10 @@ const projects = [
     ],
     image: chatApp,
     source_code_link: 'https://github.com/LeTanTru/MERN-Chat-App',
-    link: 'https://mern-chat-app-sepia.vercel.app/',
+    link: 'https://mern-chat-app-xi-puce.vercel.app/',
     createdAt: '21/5/2025',
     completedAt: '7/6/2025',
-    latestUpdatedAt: '7/6/2025'
+    latestUpdatedAt: '14/3/2026'
   },
   {
     name: 'VirtualR',
