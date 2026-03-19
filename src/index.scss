@@ -380,8 +380,8 @@
 .about::before {
   content: '';
   position: absolute;
-  width: 1200px;
-  height: 1200px;
+  width: 2000px;
+  height: 2000px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -402,12 +402,37 @@
     );
 }
 
-.about::after {
+/* .about::after {
   content: '';
   position: absolute;
   inset: 5px;
   background-color: #050817;
   @apply rounded-xl;
+} */
+
+.skill::before {
+  content: '';
+  position: absolute;
+  width: 2000px;
+  height: 2000px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation: spinner 4s ease-in-out infinite;
+  background: conic-gradient(
+      from 0deg at 50% 51.35%,
+      rgba(185, 215, 243, 0) 0deg,
+      rgba(185, 215, 243, 0) 289.4deg,
+      #ffb86c 318.05deg,
+      #ff65f2 1turn
+    ),
+    conic-gradient(
+      from 180deg at 50% 51.35%,
+      rgba(185, 215, 243, 0) 0deg,
+      rgba(185, 215, 243, 0) 287.46deg,
+      #20e3b2 325.02deg,
+      #00aefd 1turn
+    );
 }
 
 @keyframes spinner {
