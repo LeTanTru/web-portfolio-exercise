@@ -253,178 +253,178 @@ const projects = [
     completedAt: 'Present',
     latestUpdatedAt: 'Present'
   },
-  {
-    name: 'Love Travel UI Clone',
-    description:
-      'Love Travel UI Clone with HTML, CSS, JavaScript, Jquery, Animate On Scroll (AOS)',
-    tags: [
-      {
-        icon: html,
-        link: 'https://developer.mozilla.org/en-US/docs/Web/HTML'
-      },
-      {
-        icon: css,
-        link: 'https://developer.mozilla.org/en-US/docs/Web/CSS'
-      },
-      {
-        icon: javascript,
-        link: 'https://developer.mozilla.org/en-US/docs/Web/CSS'
-      },
-      {
-        icon: jquery,
-        link: 'https://jquery.com/'
-      },
-      {
-        icon: aos,
-        link: 'https://michalsnik.github.io/aos/'
-      }
-    ],
-    image: lovetravel,
-    source_code_link: 'https://github.com/LeTanTru/Love-Travel-Clone-UI',
-    link: 'https://letantrulovetravel.vercel.app/',
-    createdAt: '28/8/2021',
-    completedAt: '8/9/2021',
-    latestUpdatedAt: '27/9/2024'
-  },
-  {
-    name: 'React Admin Dashboard',
-    description: 'Simple React Admin Dashboard.',
-    tags: [
-      {
-        icon: reactjs,
-        link: 'https://react.dev/'
-      },
-      {
-        icon: tailwind,
-        link: 'https://tailwindcss.com/'
-      },
-      {
-        icon: framerMotion,
-        link: 'https://framermotion.framer.website/'
-      },
-      {
-        icon: reactRouterDom,
-        link: 'https://reactrouter.com/'
-      }
-    ],
-    image: adminDashboard,
-    source_code_link: 'https://github.com/LeTanTru/react-admin-dashboard',
-    link: 'https://letantru-admin-dashboard.vercel.app/',
-    createdAt: '1/2/2025',
-    completedAt: '5/2/2025',
-    latestUpdatedAt: '5/2/2025'
-  },
-  {
-    name: 'React Chat App',
-    description:
-      'Simple React Chat App. Note: Backend is deployed on Render (render.com), so it may take some minutes to wake up if there is no request for a long time.',
-    tags: [
-      {
-        icon: reactjs,
-        link: 'https://react.dev/'
-      },
-      {
-        icon: tailwind,
-        link: 'https://tailwindcss.com/'
-      },
-      {
-        icon: nodejs,
-        link: 'https://nodejs.org/en'
-      },
-      {
-        icon: mongodb,
-        link: 'https://www.mongodb.com/'
-      },
-      {
-        icon: reactRouterDom,
-        link: 'https://reactrouter.com/'
-      },
-      {
-        icon: socket,
-        link: 'https://socket.io/'
-      },
-      {
-        icon: zustand,
-        link: 'https://zustand-demo.pmnd.rs/'
-      },
-      {
-        icon: cloudinary,
-        link: 'https://cloudinary.com/'
-      }
-    ],
-    image: chatApp,
-    source_code_link: 'https://github.com/LeTanTru/MERN-Chat-App',
-    link: 'https://mern-chat-app-xi-puce.vercel.app/',
-    createdAt: '21/5/2025',
-    completedAt: '7/6/2025',
-    latestUpdatedAt: '14/3/2026'
-  },
-  {
-    name: 'VirtualR',
-    description:
-      'Landing Page Virtual Reality Experience with React and Tailwind CSS.',
-    tags: [
-      {
-        icon: reactjs,
-        link: 'https://react.dev/'
-      },
-      {
-        icon: tailwind,
-        link: 'https://tailwindcss.com/'
-      }
-    ],
-    image: virtualr,
-    source_code_link: 'https://github.com/LeTanTru/virtualr',
-    link: 'https://letantru-virtualr.vercel.app/',
-    createdAt: '28/6/2025',
-    completedAt: '29/6/2025',
-    latestUpdatedAt: '29/6/2025'
-  },
-  {
-    name: '3D rotation',
-    description: 'Infinite 3D rotation with HTML, CSS.',
-    tags: [
-      {
-        icon: html,
-        link: 'https://developer.mozilla.org/en-US/docs/Web/HTML'
-      },
-      {
-        icon: css,
-        link: 'https://developer.mozilla.org/en-US/docs/Web/CSS'
-      }
-    ],
-    image: _3dRotation,
-    source_code_link: 'https://github.com/LeTanTru/3d-rotation-html-css',
-    link: 'https://letantru3d-rotation.vercel.app/',
-    createdAt: '14/9/2024',
-    completedAt: '14/9/2024',
-    latestUpdatedAt: '14/9/2024'
-  },
-  {
-    name: 'Image Converter',
-    description:
-      'An Image Converter with HTML, CSS, JavaScript to convert image with many different formats.',
-    tags: [
-      {
-        icon: html,
-        link: 'https://developer.mozilla.org/en-US/docs/Web/HTML'
-      },
-      {
-        icon: css,
-        link: 'https://developer.mozilla.org/en-US/docs/Web/CSS'
-      },
-      {
-        icon: javascript,
-        link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript'
-      }
-    ],
-    image: imageConverter,
-    source_code_link: 'https://github.com/LeTanTru/image-converter',
-    link: 'https://image-converter-virid-ten.vercel.app/',
-    createdAt: '11/03/2026',
-    completedAt: '11/03/2026',
-    latestUpdatedAt: '11/03/2026'
-  }
+  // {
+  //   name: 'Love Travel UI Clone',
+  //   description:
+  //     'Love Travel UI Clone with HTML, CSS, JavaScript, Jquery, Animate On Scroll (AOS)',
+  //   tags: [
+  //     {
+  //       icon: html,
+  //       link: 'https://developer.mozilla.org/en-US/docs/Web/HTML'
+  //     },
+  //     {
+  //       icon: css,
+  //       link: 'https://developer.mozilla.org/en-US/docs/Web/CSS'
+  //     },
+  //     {
+  //       icon: javascript,
+  //       link: 'https://developer.mozilla.org/en-US/docs/Web/CSS'
+  //     },
+  //     {
+  //       icon: jquery,
+  //       link: 'https://jquery.com/'
+  //     },
+  //     {
+  //       icon: aos,
+  //       link: 'https://michalsnik.github.io/aos/'
+  //     }
+  //   ],
+  //   image: lovetravel,
+  //   source_code_link: 'https://github.com/LeTanTru/Love-Travel-Clone-UI',
+  //   link: 'https://letantrulovetravel.vercel.app/',
+  //   createdAt: '28/8/2021',
+  //   completedAt: '8/9/2021',
+  //   latestUpdatedAt: '27/9/2024'
+  // },
+  // {
+  //   name: 'React Admin Dashboard',
+  //   description: 'Simple React Admin Dashboard.',
+  //   tags: [
+  //     {
+  //       icon: reactjs,
+  //       link: 'https://react.dev/'
+  //     },
+  //     {
+  //       icon: tailwind,
+  //       link: 'https://tailwindcss.com/'
+  //     },
+  //     {
+  //       icon: framerMotion,
+  //       link: 'https://framermotion.framer.website/'
+  //     },
+  //     {
+  //       icon: reactRouterDom,
+  //       link: 'https://reactrouter.com/'
+  //     }
+  //   ],
+  //   image: adminDashboard,
+  //   source_code_link: 'https://github.com/LeTanTru/react-admin-dashboard',
+  //   link: 'https://letantru-admin-dashboard.vercel.app/',
+  //   createdAt: '1/2/2025',
+  //   completedAt: '5/2/2025',
+  //   latestUpdatedAt: '5/2/2025'
+  // },
+  // {
+  //   name: 'React Chat App',
+  //   description:
+  //     'Simple React Chat App. Note: Backend is deployed on Render (render.com), so it may take some minutes to wake up if there is no request for a long time.',
+  //   tags: [
+  //     {
+  //       icon: reactjs,
+  //       link: 'https://react.dev/'
+  //     },
+  //     {
+  //       icon: tailwind,
+  //       link: 'https://tailwindcss.com/'
+  //     },
+  //     {
+  //       icon: nodejs,
+  //       link: 'https://nodejs.org/en'
+  //     },
+  //     {
+  //       icon: mongodb,
+  //       link: 'https://www.mongodb.com/'
+  //     },
+  //     {
+  //       icon: reactRouterDom,
+  //       link: 'https://reactrouter.com/'
+  //     },
+  //     {
+  //       icon: socket,
+  //       link: 'https://socket.io/'
+  //     },
+  //     {
+  //       icon: zustand,
+  //       link: 'https://zustand-demo.pmnd.rs/'
+  //     },
+  //     {
+  //       icon: cloudinary,
+  //       link: 'https://cloudinary.com/'
+  //     }
+  //   ],
+  //   image: chatApp,
+  //   source_code_link: 'https://github.com/LeTanTru/MERN-Chat-App',
+  //   link: 'https://mern-chat-app-xi-puce.vercel.app/',
+  //   createdAt: '21/5/2025',
+  //   completedAt: '7/6/2025',
+  //   latestUpdatedAt: '14/3/2026'
+  // },
+  // {
+  //   name: 'VirtualR',
+  //   description:
+  //     'Landing Page Virtual Reality Experience with React and Tailwind CSS.',
+  //   tags: [
+  //     {
+  //       icon: reactjs,
+  //       link: 'https://react.dev/'
+  //     },
+  //     {
+  //       icon: tailwind,
+  //       link: 'https://tailwindcss.com/'
+  //     }
+  //   ],
+  //   image: virtualr,
+  //   source_code_link: 'https://github.com/LeTanTru/virtualr',
+  //   link: 'https://letantru-virtualr.vercel.app/',
+  //   createdAt: '28/6/2025',
+  //   completedAt: '29/6/2025',
+  //   latestUpdatedAt: '29/6/2025'
+  // },
+  // {
+  //   name: '3D rotation',
+  //   description: 'Infinite 3D rotation with HTML, CSS.',
+  //   tags: [
+  //     {
+  //       icon: html,
+  //       link: 'https://developer.mozilla.org/en-US/docs/Web/HTML'
+  //     },
+  //     {
+  //       icon: css,
+  //       link: 'https://developer.mozilla.org/en-US/docs/Web/CSS'
+  //     }
+  //   ],
+  //   image: _3dRotation,
+  //   source_code_link: 'https://github.com/LeTanTru/3d-rotation-html-css',
+  //   link: 'https://letantru3d-rotation.vercel.app/',
+  //   createdAt: '14/9/2024',
+  //   completedAt: '14/9/2024',
+  //   latestUpdatedAt: '14/9/2024'
+  // },
+  // {
+  //   name: 'Image Converter',
+  //   description:
+  //     'An Image Converter with HTML, CSS, JavaScript to convert image with many different formats.',
+  //   tags: [
+  //     {
+  //       icon: html,
+  //       link: 'https://developer.mozilla.org/en-US/docs/Web/HTML'
+  //     },
+  //     {
+  //       icon: css,
+  //       link: 'https://developer.mozilla.org/en-US/docs/Web/CSS'
+  //     },
+  //     {
+  //       icon: javascript,
+  //       link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript'
+  //     }
+  //   ],
+  //   image: imageConverter,
+  //   source_code_link: 'https://github.com/LeTanTru/image-converter',
+  //   link: 'https://image-converter-virid-ten.vercel.app/',
+  //   createdAt: '11/03/2026',
+  //   completedAt: '11/03/2026',
+  //   latestUpdatedAt: '11/03/2026'
+  // }
 ];
 
 const socials = [
